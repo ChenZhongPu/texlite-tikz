@@ -1,0 +1,22 @@
+{
+  "id": "dual-axis-chart",
+  "name": "Dual-axis chart",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "dual axis",
+    "two y axes",
+    "trade-off",
+    "latency",
+    "throughput"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable"
+  ],
+  "description": "Two quantities with different units over a shared horizontal axis."
+}

@@ -1,0 +1,24 @@
+{
+  "id": "pytorch",
+  "name": "PyTorch",
+  "type": "icon",
+  "category": "brands",
+  "author": "Daniel Huang",
+  "description": "PyTorch brand mark (flame), official brand color.",
+  "domain": [
+    "brands"
+  ],
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz",
+    "svg.path"
+  ],
+  "tags": [
+    "brand",
+    "deep learning",
+    "framework",
+    "logo",
+    "ml",
+    "pytorch"
+  ]
+}

@@ -1,0 +1,18 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{tikz}
+
+\definecolor{otblue}{HTML}{0072B2}
+\definecolor{otorange}{HTML}{E69F00}
+\definecolor{otteal}{HTML}{009E73}
+\definecolor{otpurple}{HTML}{CC79A7}
+\definecolor{otgray}{HTML}{5A5A5A}
+
+\begin{document}
+\begin{tikzpicture}[line width=0.9pt]
+  \foreach \x/\c in {0/otblue,1/otorange,2/otteal,3/otpurple}{
+    \filldraw[draw=\c!75!black, fill=\c!20, rounded corners=3pt] (\x*0.82,0) rectangle +(0.72,0.72);
+    \draw[\c!75!black, line width=1.3pt, line cap=round] ({\x*0.82+0.17},0.36) -- +(0.38,0);
+  }
+\end{tikzpicture}
+\end{document}

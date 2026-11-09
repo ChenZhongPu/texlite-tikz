@@ -1,0 +1,22 @@
+{
+  "id": "pooling",
+  "name": "Pooling",
+  "type": "icon",
+  "category": "ml",
+  "domain": [
+    "ml"
+  ],
+  "tags": [
+    "pooling",
+    "downsampling",
+    "max pool",
+    "average pool",
+    "cnn"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Pooling a grid into a smaller one."
+}

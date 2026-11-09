@@ -1,0 +1,17 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{tikz}
+
+\definecolor{otblue}{HTML}{0072B2}
+\definecolor{otorange}{HTML}{E69F00}
+\definecolor{otteal}{HTML}{009E73}
+\definecolor{otpurple}{HTML}{CC79A7}
+\definecolor{otgray}{HTML}{5A5A5A}
+
+\begin{document}
+\begin{tikzpicture}[line width=0.9pt]
+  \foreach \row [count=\y] in {{85,50,20,10},{40,90,35,15},{15,45,80,30},{10,20,55,95}}{
+    \foreach \v [count=\x] in \row {\filldraw[draw=white, fill=otblue!\v] (\x*0.6,-\y*0.6) rectangle +(0.6,0.6);}
+  }
+\end{tikzpicture}
+\end{document}

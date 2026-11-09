@@ -1,0 +1,24 @@
+{
+  "id": "dataset",
+  "name": "Dataset / table",
+  "type": "icon",
+  "category": "ml",
+  "author": "OpenTikZ contributors",
+  "description": "Tabular dataset icon: a small table with a header row.",
+  "domain": [
+    "ml"
+  ],
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "tags": [
+    "dataset",
+    "data",
+    "table",
+    "samples",
+    "features",
+    "spreadsheet",
+    "tabular"
+  ]
+}

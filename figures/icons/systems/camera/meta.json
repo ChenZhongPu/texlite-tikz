@@ -1,0 +1,22 @@
+{
+  "id": "camera",
+  "name": "Camera",
+  "type": "icon",
+  "category": "systems",
+  "domain": [
+    "systems"
+  ],
+  "tags": [
+    "camera",
+    "image sensor",
+    "vision",
+    "capture",
+    "photo"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Camera."
+}

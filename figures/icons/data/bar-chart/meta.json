@@ -1,0 +1,22 @@
+{
+  "id": "bar-chart",
+  "name": "Bar chart",
+  "type": "icon",
+  "category": "data",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "bar chart",
+    "comparison",
+    "results",
+    "histogram",
+    "evaluation"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Bar chart."
+}

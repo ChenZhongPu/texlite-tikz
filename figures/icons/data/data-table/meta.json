@@ -1,0 +1,22 @@
+{
+  "id": "data-table",
+  "name": "Data table",
+  "type": "icon",
+  "category": "data",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "table",
+    "tabular",
+    "csv",
+    "spreadsheet",
+    "records"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Table of records."
+}

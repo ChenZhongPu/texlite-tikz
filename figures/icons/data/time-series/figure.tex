@@ -1,0 +1,16 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{tikz}
+
+\definecolor{otblue}{HTML}{0072B2}
+\definecolor{otorange}{HTML}{E69F00}
+\definecolor{otteal}{HTML}{009E73}
+\definecolor{otpurple}{HTML}{CC79A7}
+\definecolor{otgray}{HTML}{5A5A5A}
+
+\begin{document}
+\begin{tikzpicture}[line width=0.9pt]
+  \draw[otgray!85!black, line width=1.2pt, line cap=round, -latex] (0,-0.1) -- (3.3,-0.1);
+  \draw[otteal!80!black, line width=1.4pt, line join=round] plot[smooth, domain=0:3.1, samples=70] (\x,{0.75+0.3*sin(3.1*\x r)+0.2*sin(9*\x r)+0.13*\x});
+\end{tikzpicture}
+\end{document}

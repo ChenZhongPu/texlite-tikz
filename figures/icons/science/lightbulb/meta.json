@@ -1,0 +1,22 @@
+{
+  "id": "lightbulb",
+  "name": "Idea",
+  "type": "icon",
+  "category": "science",
+  "domain": [
+    "science"
+  ],
+  "tags": [
+    "idea",
+    "lightbulb",
+    "insight",
+    "hypothesis",
+    "innovation"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Light bulb."
+}

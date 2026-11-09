@@ -1,0 +1,22 @@
+{
+  "id": "concat-operator",
+  "name": "Concatenation operator",
+  "type": "icon",
+  "category": "ml",
+  "domain": [
+    "ml"
+  ],
+  "tags": [
+    "concat",
+    "concatenate",
+    "fusion",
+    "merge",
+    "operator"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Concatenation node."
+}

@@ -1,0 +1,23 @@
+{
+  "id": "learning-curve-band",
+  "name": "Learning curve with error band",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "learning curve",
+    "training",
+    "error band",
+    "standard deviation",
+    "confidence interval"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable",
+    "fillbetween"
+  ],
+  "description": "Mean curves with shaded standard-deviation bands."
+}

@@ -1,0 +1,23 @@
+{
+  "id": "dna-helix",
+  "name": "DNA helix",
+  "type": "icon",
+  "category": "science",
+  "domain": [
+    "science"
+  ],
+  "tags": [
+    "dna",
+    "genomics",
+    "biology",
+    "gene",
+    "sequence",
+    "bioinformatics"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "DNA double helix."
+}

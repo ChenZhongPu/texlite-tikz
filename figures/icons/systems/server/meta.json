@@ -1,0 +1,23 @@
+{
+  "id": "server",
+  "name": "Server",
+  "type": "icon",
+  "category": "systems",
+  "author": "OpenTikZ contributors",
+  "description": "A rack-style server icon: stacked rack units with status LEDs and ventilation slits. Parametric unit count.",
+  "domain": [
+    "systems"
+  ],
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "tags": [
+    "server",
+    "rack",
+    "compute",
+    "infrastructure",
+    "datacenter",
+    "hardware"
+  ]
+}

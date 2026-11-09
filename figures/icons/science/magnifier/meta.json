@@ -1,0 +1,23 @@
+{
+  "id": "magnifier",
+  "name": "Magnifier",
+  "type": "icon",
+  "category": "science",
+  "domain": [
+    "science"
+  ],
+  "tags": [
+    "magnifier",
+    "search",
+    "inspect",
+    "analysis",
+    "detail",
+    "zoom"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Magnifying glass."
+}

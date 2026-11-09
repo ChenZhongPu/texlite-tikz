@@ -1,0 +1,22 @@
+{
+  "id": "time-series",
+  "name": "Time series",
+  "type": "icon",
+  "category": "data",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "time series",
+    "signal",
+    "waveform",
+    "forecasting",
+    "temporal"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Time-series signal."
+}

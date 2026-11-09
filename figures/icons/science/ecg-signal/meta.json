@@ -1,0 +1,23 @@
+{
+  "id": "ecg-signal",
+  "name": "ECG signal",
+  "type": "icon",
+  "category": "science",
+  "domain": [
+    "science"
+  ],
+  "tags": [
+    "ecg",
+    "heartbeat",
+    "physiology",
+    "medical",
+    "signal",
+    "healthcare"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Electrocardiogram trace."
+}

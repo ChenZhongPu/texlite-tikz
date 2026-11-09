@@ -1,0 +1,22 @@
+{
+  "id": "scatter-plot",
+  "name": "Scatter plot",
+  "type": "icon",
+  "category": "data",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "scatter plot",
+    "clusters",
+    "correlation",
+    "points",
+    "embedding"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Scatter plot with two clusters."
+}

@@ -1,0 +1,25 @@
+{
+  "id": "qwen",
+  "name": "Qwen",
+  "type": "icon",
+  "category": "brands",
+  "author": "Daniel Huang",
+  "description": "Qwen brand mark (Alibaba), official brand color.",
+  "domain": [
+    "brands"
+  ],
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz",
+    "svg.path"
+  ],
+  "tags": [
+    "ai",
+    "alibaba",
+    "brand",
+    "llm",
+    "logo",
+    "model",
+    "qwen"
+  ]
+}

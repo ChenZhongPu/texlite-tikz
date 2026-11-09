@@ -1,0 +1,43 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{tikz}
+
+\definecolor{plnavy}{HTML}{1F4E89}
+\definecolor{plrose}{HTML}{B85A52}
+\definecolor{plsage}{HTML}{93CC9E}
+\definecolor{plsand}{HTML}{E0BE78}
+\definecolor{plplum}{HTML}{8E7BB5}
+\definecolor{plgray}{HTML}{6E6E6E}
+
+% ==== data: one entry per spoke, clockwise from the top ====
+\def\radarn{6}
+\def\radarnames{Accuracy,Robustness,Speed,Memory,Fairness,Coverage}
+\def\seriesA{{72,55,88,64,58,70}}
+\def\seriesB{{86,78,62,70,80,75}}
+
+\pgfmathtruncatemacro\lastaxis{\radarn-1}
+\def\R{2.8}
+\newcommand{\radarpt}[2]{({90-#2*360/\radarn}:{\R*#1[#2]/100})}
+\newcommand{\radarseries}[2]{
+  \filldraw[draw=#2, fill=#2, fill opacity=0.15, line width=1.1pt, line join=round] \radarpt{#1}{0} \foreach \i in {1,...,\lastaxis}{ -- \radarpt{#1}{\i} } -- cycle;
+  \foreach \i in {0,...,\lastaxis}{ \fill[#2] \radarpt{#1}{\i} circle[radius=1.5pt]; }
+}
+
+\begin{document}
+\begin{tikzpicture}
+  \foreach \level in {25,50,75,100}{
+    \draw[plgray!35, line width=0.4pt] (90:\level/100*\R) \foreach \i in {1,...,\lastaxis}{ -- ({90-\i*360/\radarn}:\level/100*\R) } -- cycle;
+    \node[font=\tiny, fill=white, inner sep=0.5pt, text=plgray] at (90:\level/100*\R) {\level};
+  }
+  \foreach \name [count=\c from 0] in \radarnames {
+    \pgfmathsetmacro\a{90-\c*360/\radarn}
+    \draw[plgray!35, line width=0.3pt] (0,0) -- (\a:\R);
+    \node[font=\small] at (\a:\R+0.75) {\name};
+  }
+  \radarseries{\seriesA}{plrose}
+  \radarseries{\seriesB}{plnavy}
+  \foreach \c/\l [count=\k] in {plrose/Baseline, plnavy/Ours}{
+    \draw[\c, line width=1.1pt] (3.9,-2.3-0.42*\k) -- ++(0.6,0) node[right, black, font=\small] {\l};
+  }
+\end{tikzpicture}
+\end{document}

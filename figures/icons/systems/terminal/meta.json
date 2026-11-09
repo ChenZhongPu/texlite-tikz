@@ -1,0 +1,23 @@
+{
+  "id": "terminal",
+  "name": "Terminal",
+  "type": "icon",
+  "category": "systems",
+  "domain": [
+    "systems"
+  ],
+  "tags": [
+    "terminal",
+    "shell",
+    "command line",
+    "console",
+    "code",
+    "script"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Terminal window with a command prompt."
+}

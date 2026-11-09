@@ -1,0 +1,24 @@
+{
+  "id": "git",
+  "name": "Git",
+  "type": "icon",
+  "category": "brands",
+  "author": "Daniel Huang",
+  "description": "Git brand mark, official brand color.",
+  "domain": [
+    "brands"
+  ],
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz",
+    "svg.path"
+  ],
+  "tags": [
+    "branch",
+    "brand",
+    "git",
+    "logo",
+    "vcs",
+    "version control"
+  ]
+}

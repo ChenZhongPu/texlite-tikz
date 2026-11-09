@@ -1,0 +1,23 @@
+{
+  "id": "token-sequence",
+  "name": "Token sequence",
+  "type": "icon",
+  "category": "ml",
+  "domain": [
+    "ml"
+  ],
+  "tags": [
+    "tokens",
+    "tokenization",
+    "sequence",
+    "text",
+    "nlp",
+    "llm"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Sequence of tokens."
+}

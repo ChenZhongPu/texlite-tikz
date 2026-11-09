@@ -1,0 +1,22 @@
+{
+  "id": "log-log-scaling",
+  "name": "Log-log scaling plot",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "log scale",
+    "log-log",
+    "scaling",
+    "complexity",
+    "power law"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable"
+  ],
+  "description": "Runtime scaling on logarithmic axes."
+}

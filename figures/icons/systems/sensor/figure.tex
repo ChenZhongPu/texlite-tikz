@@ -1,0 +1,19 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{tikz}
+
+\definecolor{otblue}{HTML}{0072B2}
+\definecolor{otorange}{HTML}{E69F00}
+\definecolor{otteal}{HTML}{009E73}
+\definecolor{otpurple}{HTML}{CC79A7}
+\definecolor{otgray}{HTML}{5A5A5A}
+
+\begin{document}
+\begin{tikzpicture}[line width=0.9pt]
+  \fill[otteal!75!black] (0,0) circle[radius=0.22];
+  \foreach \r in {0.55,0.95,1.35}{
+    \draw[otteal!75!black, line width=1.5pt, line cap=round] (40:\r) arc[start angle=40, end angle=-40, radius=\r];
+    \draw[otteal!75!black, line width=1.5pt, line cap=round] (140:\r) arc[start angle=140, end angle=220, radius=\r];
+  }
+\end{tikzpicture}
+\end{document}

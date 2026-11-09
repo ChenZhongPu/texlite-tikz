@@ -1,0 +1,22 @@
+{
+  "id": "precision-recall-curve",
+  "name": "Precision-recall curve",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "precision",
+    "recall",
+    "F1",
+    "classification",
+    "evaluation"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable"
+  ],
+  "description": "Precision-recall curves with dashed iso-F1 contours."
+}

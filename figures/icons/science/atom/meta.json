@@ -1,0 +1,22 @@
+{
+  "id": "atom",
+  "name": "Atom",
+  "type": "icon",
+  "category": "science",
+  "domain": [
+    "science"
+  ],
+  "tags": [
+    "atom",
+    "physics",
+    "quantum",
+    "chemistry",
+    "particle"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Atom with electron orbits."
+}

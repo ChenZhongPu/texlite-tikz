@@ -1,0 +1,17 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{tikz}
+
+\definecolor{otblue}{HTML}{0072B2}
+\definecolor{otorange}{HTML}{E69F00}
+\definecolor{otteal}{HTML}{009E73}
+\definecolor{otpurple}{HTML}{CC79A7}
+\definecolor{otgray}{HTML}{5A5A5A}
+
+\begin{document}
+\begin{tikzpicture}[line width=0.9pt]
+  \filldraw[draw=otgray!80!black, fill=otgray!15, rounded corners=2pt] (0.3,0.22) rectangle (2.7,1.75);
+  \filldraw[draw=otblue!60!black, fill=otblue!12] (0.45,0.37) rectangle (2.55,1.6);
+  \filldraw[draw=otgray!80!black, fill=otgray!15, rounded corners=1pt] (0,0) -- (3,0) -- (2.75,0.22) -- (0.25,0.22) -- cycle;
+\end{tikzpicture}
+\end{document}

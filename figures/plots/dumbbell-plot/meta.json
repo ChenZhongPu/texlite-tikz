@@ -1,0 +1,21 @@
+{
+  "id": "dumbbell-plot",
+  "name": "Dumbbell plot",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "dumbbell",
+    "before after",
+    "paired",
+    "improvement"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable"
+  ],
+  "description": "Paired values joined by a line, for showing the change between two conditions."
+}

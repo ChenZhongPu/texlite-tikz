@@ -1,0 +1,22 @@
+{
+  "id": "tensor",
+  "name": "Tensor",
+  "type": "icon",
+  "category": "ml",
+  "domain": [
+    "ml"
+  ],
+  "tags": [
+    "tensor",
+    "array",
+    "matrix",
+    "input",
+    "multidimensional"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Three-dimensional tensor."
+}

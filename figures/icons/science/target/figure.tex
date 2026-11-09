@@ -1,0 +1,17 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{tikz}
+
+\definecolor{otblue}{HTML}{0072B2}
+\definecolor{otorange}{HTML}{E69F00}
+\definecolor{otteal}{HTML}{009E73}
+\definecolor{otpurple}{HTML}{CC79A7}
+\definecolor{otgray}{HTML}{5A5A5A}
+
+\begin{document}
+\begin{tikzpicture}[line width=0.9pt]
+  \foreach \r/\c in {1.2/10,0.82/45,0.44/10}{\filldraw[draw=otorange!85!black, fill=otorange!\c] (0,0) circle[radius=\r];}
+  \fill[otorange!85!black] (0,0) circle[radius=0.1];
+  \draw[otgray!85!black, line width=1.8pt, -latex] (1.5,1.5) -- (0.07,0.07);
+\end{tikzpicture}
+\end{document}

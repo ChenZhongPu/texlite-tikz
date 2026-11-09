@@ -1,0 +1,21 @@
+{
+  "id": "heatmap-matrix",
+  "name": "Heatmap",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "heatmap",
+    "matrix",
+    "correlation",
+    "attention map"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable"
+  ],
+  "description": "Matrix of values drawn with a color bar."
+}

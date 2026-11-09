@@ -1,0 +1,23 @@
+{
+  "id": "shield",
+  "name": "Shield",
+  "type": "icon",
+  "category": "systems",
+  "domain": [
+    "systems"
+  ],
+  "tags": [
+    "shield",
+    "security",
+    "safety",
+    "defense",
+    "trust",
+    "verified"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Security shield with a check mark."
+}

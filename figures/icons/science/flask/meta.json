@@ -1,0 +1,22 @@
+{
+  "id": "flask",
+  "name": "Flask",
+  "type": "icon",
+  "category": "science",
+  "domain": [
+    "science"
+  ],
+  "tags": [
+    "flask",
+    "chemistry",
+    "laboratory",
+    "reaction",
+    "experiment"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Erlenmeyer flask."
+}

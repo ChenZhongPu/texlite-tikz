@@ -1,0 +1,7 @@
+[
+  {"id": "systems", "label": {"en": "Systems", "zh": "系统", "zh-Hant": "系統"}},
+  {"id": "ml", "label": {"en": "Machine learning", "zh": "机器学习", "zh-Hant": "機器學習"}},
+  {"id": "data", "label": {"en": "Chart icons", "zh": "图表示意", "zh-Hant": "圖表示意"}},
+  {"id": "science", "label": {"en": "Science", "zh": "科研", "zh-Hant": "科研"}},
+  {"id": "brands", "label": {"en": "Brands", "zh": "品牌", "zh-Hant": "品牌"}, "trademark": true}
+]

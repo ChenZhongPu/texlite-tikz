@@ -1,0 +1,21 @@
+{
+  "id": "encoder",
+  "name": "Encoder",
+  "type": "icon",
+  "category": "ml",
+  "domain": [
+    "ml"
+  ],
+  "tags": [
+    "encoder",
+    "compression",
+    "bottleneck",
+    "representation"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Encoder narrowing toward a representation."
+}

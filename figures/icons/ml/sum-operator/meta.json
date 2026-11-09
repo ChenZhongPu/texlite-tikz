@@ -1,0 +1,22 @@
+{
+  "id": "sum-operator",
+  "name": "Sum operator",
+  "type": "icon",
+  "category": "ml",
+  "domain": [
+    "ml"
+  ],
+  "tags": [
+    "sum",
+    "add",
+    "skip connection",
+    "residual",
+    "operator"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Summation node."
+}

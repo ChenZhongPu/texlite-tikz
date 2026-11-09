@@ -1,0 +1,22 @@
+{
+  "id": "target",
+  "name": "Target",
+  "type": "icon",
+  "category": "science",
+  "domain": [
+    "science"
+  ],
+  "tags": [
+    "target",
+    "goal",
+    "objective",
+    "accuracy",
+    "ground truth"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Target with an arrow."
+}

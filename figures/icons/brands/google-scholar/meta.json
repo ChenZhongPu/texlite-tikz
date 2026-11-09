@@ -1,0 +1,24 @@
+{
+  "id": "google-scholar",
+  "name": "Google Scholar",
+  "type": "icon",
+  "category": "brands",
+  "author": "Daniel Huang",
+  "description": "Google Scholar brand mark, official brand color.",
+  "domain": [
+    "brands"
+  ],
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz",
+    "svg.path"
+  ],
+  "tags": [
+    "brand",
+    "citations",
+    "google-scholar",
+    "logo",
+    "papers",
+    "search"
+  ]
+}

@@ -1,0 +1,16 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{tikz}
+
+\definecolor{otblue}{HTML}{0072B2}
+\definecolor{otorange}{HTML}{E69F00}
+\definecolor{otteal}{HTML}{009E73}
+\definecolor{otpurple}{HTML}{CC79A7}
+\definecolor{otgray}{HTML}{5A5A5A}
+
+\begin{document}
+\begin{tikzpicture}[line width=0.9pt]
+  \foreach \r/\o in {1/12,0.78/22,0.56/34,0.34/48,0.14/70}{\filldraw[draw=otblue!75!black, fill=otblue!\o] (0,0) ellipse[x radius={2*\r}, y radius={1.25*\r}];}
+  \draw[otorange!85!black, line width=1.5pt, -latex, line join=round] (-1.75,0.62) -- (-1.05,-0.45) -- (-0.45,0.4) -- (-0.12,-0.12) -- (0,0);
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,23 @@
+{
+  "id": "gear",
+  "name": "Gear",
+  "type": "icon",
+  "category": "systems",
+  "domain": [
+    "systems"
+  ],
+  "tags": [
+    "gear",
+    "settings",
+    "process",
+    "pipeline",
+    "configuration",
+    "operation"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Gear for a processing step."
+}

@@ -1,0 +1,23 @@
+{
+  "id": "clock",
+  "name": "Clock",
+  "type": "icon",
+  "category": "systems",
+  "domain": [
+    "systems"
+  ],
+  "tags": [
+    "clock",
+    "time",
+    "latency",
+    "schedule",
+    "timer",
+    "deadline"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Clock face."
+}

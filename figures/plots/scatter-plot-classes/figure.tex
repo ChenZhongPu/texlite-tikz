@@ -1,0 +1,42 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\pgfplotsset{compat=1.18, width=8.5cm, height=5.6cm, tick label style={font=\small}, label style={font=\small}, legend cell align=left, legend style={font=\small, draw=none, fill=none}}
+
+\definecolor{plnavy}{HTML}{1F4E89}
+\definecolor{plrose}{HTML}{B85A52}
+\definecolor{plsage}{HTML}{93CC9E}
+\definecolor{plsand}{HTML}{E0BE78}
+\definecolor{plplum}{HTML}{8E7BB5}
+\definecolor{plgray}{HTML}{6E6E6E}
+
+% ==== data: replace with your own ====
+\pgfplotstableread{
+x    y    class
+1.1  1.6  0
+1.6  1.2  0
+1.9  2.3  0
+2.4  1.7  0
+2.7  2.6  0
+1.3  2.5  0
+2.2  2.9  0
+4.1  3.9  1
+4.6  4.8  1
+5.2  4.2  1
+5.5  5.3  1
+4.3  5.2  1
+5.9  4.7  1
+5.0  5.8  1
+}\datatable
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[xlabel={Feature 1}, ylabel={Feature 2}, grid=major, grid style={plgray!20}, legend pos=north west]
+  \addplot[only marks, mark=*, mark size=2.4pt, plnavy] table[x=x, y=y, restrict expr to domain={\thisrow{class}}{0:0}] {\datatable};
+  \addlegendentry{Class A}
+  \addplot[only marks, mark=triangle*, mark size=3pt, plrose] table[x=x, y=y, restrict expr to domain={\thisrow{class}}{1:1}] {\datatable};
+  \addlegendentry{Class B}
+\end{axis}
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,22 @@
+{
+  "id": "brain",
+  "name": "Brain",
+  "type": "icon",
+  "category": "science",
+  "domain": [
+    "science"
+  ],
+  "tags": [
+    "brain",
+    "neuroscience",
+    "cognition",
+    "eeg",
+    "fmri"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Human brain."
+}

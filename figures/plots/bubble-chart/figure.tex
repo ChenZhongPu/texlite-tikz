@@ -1,0 +1,31 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\pgfplotsset{compat=1.18, width=8.5cm, height=5.6cm, tick label style={font=\small}, label style={font=\small}, legend cell align=left, legend style={font=\small, draw=none, fill=none}}
+
+\definecolor{plnavy}{HTML}{1F4E89}
+\definecolor{plrose}{HTML}{B85A52}
+\definecolor{plsage}{HTML}{93CC9E}
+\definecolor{plsand}{HTML}{E0BE78}
+\definecolor{plplum}{HTML}{8E7BB5}
+\definecolor{plgray}{HTML}{6E6E6E}
+
+% ==== data: x, y, marker radius in points, and a label without spaces ====
+\pgfplotstableread{
+x    y     size  label
+12   71.5  5     A
+25   76.2  7     B
+41   80.8  10    C
+58   83.1  13    D
+82   86.4  17    E
+}\datatable
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[xmin=0, xmax=100, ymin=66, ymax=92, xlabel={Inference time (ms)}, ylabel={Accuracy (\%)}, grid=major, grid style={plgray!15}]
+  \addplot[scatter, only marks, mark=*, scatter/use mapped color={draw=plnavy!80!black, fill=plnavy!45}, mark options={fill opacity=0.8}, visualization depends on={\thisrow{size} \as \radius}, scatter/@pre marker code/.append style={/tikz/mark size=\radius}] table[x=x, y=y] {\datatable};
+  \addplot[only marks, mark=none, nodes near coords, nodes near coords align={center}, nodes near coords style={font=\scriptsize}, point meta=explicit symbolic] table[x=x, y=y, meta=label] {\datatable};
+\end{axis}
+\end{tikzpicture}
+\end{document}

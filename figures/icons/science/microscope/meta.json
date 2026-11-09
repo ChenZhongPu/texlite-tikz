@@ -1,0 +1,22 @@
+{
+  "id": "microscope",
+  "name": "Microscope",
+  "type": "icon",
+  "category": "science",
+  "domain": [
+    "science"
+  ],
+  "tags": [
+    "microscope",
+    "biology",
+    "imaging",
+    "laboratory",
+    "experiment"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Laboratory microscope."
+}

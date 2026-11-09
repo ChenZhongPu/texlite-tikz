@@ -1,0 +1,21 @@
+{
+  "id": "horizontal-bar-ranked",
+  "name": "Ranked horizontal bars",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "bar chart",
+    "horizontal",
+    "ranking",
+    "leaderboard"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable"
+  ],
+  "description": "Horizontal bars sorted by score with the value printed at the end of each bar."
+}

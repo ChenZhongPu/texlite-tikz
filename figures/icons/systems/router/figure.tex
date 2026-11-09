@@ -1,0 +1,19 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{tikz}
+
+\definecolor{otblue}{HTML}{0072B2}
+\definecolor{otorange}{HTML}{E69F00}
+\definecolor{otteal}{HTML}{009E73}
+\definecolor{otpurple}{HTML}{CC79A7}
+\definecolor{otgray}{HTML}{5A5A5A}
+
+\begin{document}
+\begin{tikzpicture}[line width=0.9pt]
+  \draw[otgray!80!black, line width=1.6pt, line cap=round] (0.55,0.75) -- (0.25,1.75);
+  \draw[otgray!80!black, line width=1.6pt, line cap=round] (2.45,0.75) -- (2.75,1.75);
+  \filldraw[draw=otblue!75!black, fill=otblue!15, rounded corners=3pt] (0,0) rectangle (3,0.85);
+  \foreach \x in {0.4,0.75,1.1,1.45}{\fill[otteal] (\x,0.42) circle[radius=0.08];}
+  \foreach \x in {2.05,2.3,2.55}{\draw[otblue!75!black, line width=1.3pt] (\x,0.25) -- (\x,0.6);}
+\end{tikzpicture}
+\end{document}

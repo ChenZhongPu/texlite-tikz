@@ -1,0 +1,24 @@
+{
+  "id": "reddit",
+  "name": "Reddit",
+  "type": "icon",
+  "category": "brands",
+  "author": "Daniel Huang",
+  "description": "Reddit brand mark (Snoo), official brand color.",
+  "domain": [
+    "brands"
+  ],
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz",
+    "svg.path"
+  ],
+  "tags": [
+    "brand",
+    "community",
+    "forum",
+    "logo",
+    "reddit",
+    "social"
+  ]
+}

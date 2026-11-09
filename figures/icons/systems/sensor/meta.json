@@ -1,0 +1,23 @@
+{
+  "id": "sensor",
+  "name": "Sensor",
+  "type": "icon",
+  "category": "systems",
+  "domain": [
+    "systems"
+  ],
+  "tags": [
+    "sensor",
+    "iot",
+    "signal",
+    "edge",
+    "wireless",
+    "measurement"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Sensor broadcasting a signal."
+}

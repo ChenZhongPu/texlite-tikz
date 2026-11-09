@@ -1,0 +1,25 @@
+{
+  "id": "convolution",
+  "name": "Convolution",
+  "type": "icon",
+  "category": "ml",
+  "author": "OpenTikZ contributors",
+  "description": "A convolution: a sliding kernel window over a feature-map grid producing an output cell.",
+  "domain": [
+    "ml"
+  ],
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz",
+    "arrows.meta"
+  ],
+  "tags": [
+    "convolution",
+    "cnn",
+    "kernel",
+    "filter",
+    "feature-map",
+    "stride",
+    "vision"
+  ]
+}

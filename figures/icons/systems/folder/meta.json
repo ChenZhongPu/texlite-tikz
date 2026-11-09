@@ -1,0 +1,22 @@
+{
+  "id": "folder",
+  "name": "Folder",
+  "type": "icon",
+  "category": "systems",
+  "domain": [
+    "systems"
+  ],
+  "tags": [
+    "folder",
+    "directory",
+    "files",
+    "storage",
+    "repository"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "File folder."
+}

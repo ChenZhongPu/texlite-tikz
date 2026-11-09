@@ -1,0 +1,22 @@
+{
+  "id": "padlock",
+  "name": "Padlock",
+  "type": "icon",
+  "category": "systems",
+  "domain": [
+    "systems"
+  ],
+  "tags": [
+    "lock",
+    "security",
+    "privacy",
+    "encryption",
+    "access control"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Closed padlock."
+}

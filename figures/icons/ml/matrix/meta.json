@@ -1,0 +1,24 @@
+{
+  "id": "matrix",
+  "name": "Binary matrix",
+  "type": "icon",
+  "category": "ml",
+  "author": "OpenTikZ contributors",
+  "description": "A grid of binary digits in curly braces, for raw data / encoded tensors / bit matrices.",
+  "domain": [
+    "ml"
+  ],
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz",
+    "decorations.pathreplacing"
+  ],
+  "tags": [
+    "matrix",
+    "binary",
+    "bits",
+    "data",
+    "encoding",
+    "tensor"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": "embedding",
+  "name": "Embedding vector",
+  "type": "icon",
+  "category": "ml",
+  "author": "OpenTikZ contributors",
+  "description": "An embedding vector drawn as a bracketed column of weighted cells.",
+  "domain": [
+    "ml"
+  ],
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "tags": [
+    "embedding",
+    "vector",
+    "representation",
+    "latent",
+    "feature",
+    "encoding"
+  ]
+}

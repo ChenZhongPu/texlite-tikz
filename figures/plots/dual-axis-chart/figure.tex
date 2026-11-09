@@ -1,0 +1,41 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\pgfplotsset{compat=1.18, width=8.5cm, height=5.6cm, tick label style={font=\small}, label style={font=\small}, legend cell align=left, legend style={font=\small, draw=none, fill=none}}
+
+\definecolor{plnavy}{HTML}{1F4E89}
+\definecolor{plrose}{HTML}{B85A52}
+\definecolor{plsage}{HTML}{93CC9E}
+\definecolor{plsand}{HTML}{E0BE78}
+\definecolor{plplum}{HTML}{8E7BB5}
+\definecolor{plgray}{HTML}{6E6E6E}
+
+% ==== data: replace with your own ====
+\pgfplotstableread{
+x   throughput latency
+1   120        12
+2   230        14
+4   420        19
+8   690        31
+16  810        62
+32  840        130
+}\datatable
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+    scale only axis=false, axis y line*=left, xmode=log, log basis x=2, xtick=data, xticklabels from table={\datatable}{x},
+    xlabel={Concurrent clients}, ylabel={Throughput (req/s)}, ylabel style={plnavy}, y tick label style={plnavy}, ymin=0, grid=major, grid style={plgray!20}]
+  \addplot[plnavy, very thick, mark=*, mark options={fill=white}] table[x=x, y=throughput] {\datatable};
+  \label{plot:throughput}
+\end{axis}
+\begin{axis}[
+    axis y line*=right, axis x line=none, xmode=log, log basis x=2,
+    ylabel={Latency (ms)}, ylabel style={plrose!85!black}, y tick label style={plrose!85!black}, ymin=0, legend pos=north west]
+  \addlegendimage{/pgfplots/refstyle=plot:throughput}\addlegendentry{Throughput}
+  \addplot[plrose, very thick, mark=square*, mark options={fill=white}] table[x=x, y=latency] {\datatable};
+  \addlegendentry{Latency}
+\end{axis}
+\end{tikzpicture}
+\end{document}

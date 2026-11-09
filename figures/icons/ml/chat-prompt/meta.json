@@ -1,0 +1,23 @@
+{
+  "id": "chat-prompt",
+  "name": "Prompt",
+  "type": "icon",
+  "category": "ml",
+  "domain": [
+    "ml"
+  ],
+  "tags": [
+    "prompt",
+    "chat",
+    "llm",
+    "conversation",
+    "instruction",
+    "dialogue"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Chat prompt bubble."
+}

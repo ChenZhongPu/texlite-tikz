@@ -1,0 +1,23 @@
+{
+  "id": "small-multiples-lines",
+  "name": "Small multiples",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "small multiples",
+    "panels",
+    "line chart",
+    "shared axis",
+    "groupplots"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable",
+    "groupplots"
+  ],
+  "description": "Three line-chart panels that share a y axis and a single legend."
+}

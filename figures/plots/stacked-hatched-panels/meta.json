@@ -1,0 +1,25 @@
+{
+  "id": "stacked-hatched-panels",
+  "name": "Hatched stacked bars in panels",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "stacked bar",
+    "hatch",
+    "pattern",
+    "probability",
+    "small multiples",
+    "method comparison"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable",
+    "groupplots",
+    "patterns"
+  ],
+  "description": "Two panels of 100% stacked bars with hatched outer segments, one color per method and the lowest share printed on each bar."
+}

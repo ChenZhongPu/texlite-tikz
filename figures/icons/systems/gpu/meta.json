@@ -1,0 +1,23 @@
+{
+  "id": "gpu",
+  "name": "GPU",
+  "type": "icon",
+  "category": "systems",
+  "author": "OpenTikZ contributors",
+  "description": "GPU / graphics-card icon with a fan and gold edge connector.",
+  "domain": [
+    "systems"
+  ],
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "tags": [
+    "gpu",
+    "graphics card",
+    "accelerator",
+    "compute",
+    "hardware",
+    "cuda"
+  ]
+}

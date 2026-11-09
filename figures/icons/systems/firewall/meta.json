@@ -1,0 +1,22 @@
+{
+  "id": "firewall",
+  "name": "Firewall",
+  "type": "icon",
+  "category": "systems",
+  "domain": [
+    "systems"
+  ],
+  "tags": [
+    "firewall",
+    "security",
+    "network",
+    "wall",
+    "protection"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Brick firewall."
+}

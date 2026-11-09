@@ -1,0 +1,23 @@
+{
+  "id": "calibration-reliability",
+  "name": "Reliability diagram",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "calibration",
+    "reliability",
+    "ECE",
+    "confidence",
+    "evaluation"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable",
+    "patterns"
+  ],
+  "description": "Accuracy per confidence bin with the hatched gap to perfect calibration."
+}

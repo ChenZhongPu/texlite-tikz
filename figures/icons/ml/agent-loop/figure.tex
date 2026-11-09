@@ -1,0 +1,19 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{tikz}
+
+\definecolor{otblue}{HTML}{0072B2}
+\definecolor{otorange}{HTML}{E69F00}
+\definecolor{otteal}{HTML}{009E73}
+\definecolor{otpurple}{HTML}{CC79A7}
+\definecolor{otgray}{HTML}{5A5A5A}
+
+\begin{document}
+\begin{tikzpicture}[line width=0.9pt]
+  \foreach \a/\c in {90/otblue,210/otorange,330/otteal}{
+    \draw[\c!80!black, line width=2.2pt, -latex] (\a+18:1.15) arc[start angle=\a+18, end angle=\a+102, radius=1.15];
+    \filldraw[draw=\c!80!black, fill=\c!20] (\a:1.15) circle[radius=0.34];
+  }
+  \fill[otgray!70] (0,0) circle[radius=0.2];
+\end{tikzpicture}
+\end{document}

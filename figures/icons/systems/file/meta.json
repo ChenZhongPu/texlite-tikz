@@ -1,0 +1,23 @@
+{
+  "id": "file",
+  "name": "File",
+  "type": "icon",
+  "category": "systems",
+  "domain": [
+    "systems"
+  ],
+  "tags": [
+    "file",
+    "document",
+    "text",
+    "log",
+    "artifact",
+    "output"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Document file with a folded corner."
+}

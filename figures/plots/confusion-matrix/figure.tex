@@ -1,0 +1,39 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\pgfplotsset{compat=1.18, width=8.5cm, height=5.6cm, tick label style={font=\small}, label style={font=\small}, legend cell align=left, legend style={font=\small, draw=none, fill=none}}
+
+\definecolor{plnavy}{HTML}{1F4E89}
+\definecolor{plrose}{HTML}{B85A52}
+\definecolor{plsage}{HTML}{93CC9E}
+\definecolor{plsand}{HTML}{E0BE78}
+\definecolor{plplum}{HTML}{8E7BB5}
+\definecolor{plgray}{HTML}{6E6E6E}
+
+% ==== data: replace with your own (predicted, true, count) ====
+\pgfplotstableread{
+x y v
+0 0 87
+1 0 9
+2 0 4
+0 1 11
+1 1 76
+2 1 13
+0 2 3
+1 2 8
+2 2 89
+}\datatable
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[
+    width=6.6cm, height=6.6cm, xmin=-0.5, xmax=2.5, ymin=-0.5, ymax=2.5, axis on top, y dir=reverse, xtick={0,1,2}, ytick={0,1,2},
+    xticklabels={Cat, Dog, Bird}, yticklabels={Cat, Dog, Bird}, tick style={draw=none},
+    xlabel={Predicted}, ylabel={True}, colormap={blues}{color=(white) color=(plnavy)}, point meta min=0, point meta max=100,
+    nodes near coords={\pgfmathprintnumber[fixed, precision=0]\pgfplotspointmeta}, nodes near coords align=center,
+    every node near coord/.append style={font=\small, /pgf/number format/fixed}]
+  \addplot[matrix plot*, mesh/cols=3, mesh/rows=3, point meta=explicit] table[x=x, y=y, meta=v] {\datatable};
+\end{axis}
+\end{tikzpicture}
+\end{document}

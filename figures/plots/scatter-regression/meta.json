@@ -1,0 +1,22 @@
+{
+  "id": "scatter-regression",
+  "name": "Scatter with linear fit",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "scatter",
+    "regression",
+    "correlation",
+    "fit",
+    "trend"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable"
+  ],
+  "description": "Scatter plot with a least-squares line computed from the data when the figure compiles."
+}

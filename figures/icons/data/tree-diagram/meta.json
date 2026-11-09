@@ -1,0 +1,22 @@
+{
+  "id": "tree-diagram",
+  "name": "Tree",
+  "type": "icon",
+  "category": "data",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "tree",
+    "hierarchy",
+    "decision tree",
+    "taxonomy",
+    "clustering"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Hierarchical tree."
+}

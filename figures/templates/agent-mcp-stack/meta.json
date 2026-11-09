@@ -1,0 +1,140 @@
+{
+  "author": "Daniel Huang",
+  "composed_of": [
+    "claude",
+    "mcp",
+    "github",
+    "arxiv",
+    "google-scholar"
+  ],
+  "description": "LLM agent tool-use stack with brand logos: user to an LLM core to MCP servers fanning out to swappable tool cards.",
+  "domain": [
+    "ml",
+    "brands"
+  ],
+  "edit_contract": {
+    "invariants": [
+      "Structural colors only via the five palette names; brand marks keep their official brand\\* colors (exception documented in icons/brands/README.md).",
+      "Node names user/llm/mcp/t1..t3 are stable API — never rename them.",
+      "svg.path ignores TikZ unit-vector options (x=, y=): position/size logo pics only via shift/scale.",
+      "The file must stay standalone-compilable."
+    ],
+    "node_naming": "user, llm, mcp; tool cards t1..t3 top-to-bottom; logos are pics named pic<brand>",
+    "operations": [
+      {
+        "id": "relabel-cards",
+        "summary": "Change any card or edge text via the label \\def parameters only."
+      },
+      {
+        "id": "swap-tool-logo",
+        "summary": "Replace a tool card's logo: swap the \\pic call's pic<brand> name and inline the new brand's \\definecolor + pic definition from icons/brands/<brand>/."
+      },
+      {
+        "id": "add-tool-card",
+        "summary": "Duplicate the t3 block as t4 with yshift=-2*(\\cardh+\\toolgap), add a flow edge from mcp to t4.west, and a \\tooldlabel parameter."
+      },
+      {
+        "id": "resize-cards",
+        "summary": "Scale all cards via \\cardw/\\cardh; keep pic scale ~0.26-0.3 so logos stay inside cards."
+      },
+      {
+        "id": "recolor-structure",
+        "summary": "Change card fills/arrows via the five palette names (tints allowed); never touch the brand\\* colors."
+      }
+    ],
+    "parameters": [
+      {
+        "default": "2.4",
+        "meaning": "card width",
+        "name": "\\cardw",
+        "type": "length-cm"
+      },
+      {
+        "default": "1.9",
+        "meaning": "logo-card height",
+        "name": "\\cardh",
+        "type": "length-cm"
+      },
+      {
+        "default": "0.45",
+        "meaning": "vertical gap between tool cards",
+        "name": "\\toolgap",
+        "type": "length-cm"
+      },
+      {
+        "default": "User",
+        "meaning": "label of the user card",
+        "name": "\\userlabel",
+        "type": "text"
+      },
+      {
+        "default": "Claude",
+        "meaning": "label of the LLM-core card",
+        "name": "\\llmlabel",
+        "type": "text"
+      },
+      {
+        "default": "MCP servers",
+        "meaning": "label of the protocol card",
+        "name": "\\mcplabel",
+        "type": "text"
+      },
+      {
+        "default": "GitHub",
+        "meaning": "label of the top tool card (t1)",
+        "name": "\\toolalabel",
+        "type": "text"
+      },
+      {
+        "default": "arXiv",
+        "meaning": "label of the middle tool card (t2)",
+        "name": "\\toolblabel",
+        "type": "text"
+      },
+      {
+        "default": "Scholar",
+        "meaning": "label of the bottom tool card (t3)",
+        "name": "\\toolclabel",
+        "type": "text"
+      },
+      {
+        "default": "chat",
+        "meaning": "user-to-LLM edge label",
+        "name": "\\chatlabel",
+        "type": "text"
+      },
+      {
+        "default": "tool calls",
+        "meaning": "LLM-to-MCP edge label",
+        "name": "\\calllabel",
+        "type": "text"
+      }
+    ],
+    "styles": [
+      "card",
+      "cardlabel",
+      "flow",
+      "elabel"
+    ]
+  },
+  "id": "agent-mcp-stack",
+  "license": "CC0-1.0",
+  "name": "Agent Tool-Use Stack (MCP)",
+  "requires": [
+    "tikz",
+    "svg.path",
+    "positioning",
+    "arrows.meta"
+  ],
+  "tags": [
+    "llm",
+    "agent",
+    "mcp",
+    "tools",
+    "tool use",
+    "claude",
+    "brands",
+    "logo"
+  ],
+  "type": "template"
+}

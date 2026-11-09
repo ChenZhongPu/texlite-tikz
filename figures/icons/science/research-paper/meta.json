@@ -1,0 +1,22 @@
+{
+  "id": "research-paper",
+  "name": "Research paper",
+  "type": "icon",
+  "category": "science",
+  "domain": [
+    "science"
+  ],
+  "tags": [
+    "paper",
+    "publication",
+    "article",
+    "manuscript",
+    "literature"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Two-column research paper."
+}

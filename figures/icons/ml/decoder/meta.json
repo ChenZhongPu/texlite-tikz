@@ -1,0 +1,21 @@
+{
+  "id": "decoder",
+  "name": "Decoder",
+  "type": "icon",
+  "category": "ml",
+  "domain": [
+    "ml"
+  ],
+  "tags": [
+    "decoder",
+    "generation",
+    "reconstruction",
+    "upsampling"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Decoder widening from a representation."
+}

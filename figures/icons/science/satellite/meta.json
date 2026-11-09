@@ -1,0 +1,22 @@
+{
+  "id": "satellite",
+  "name": "Satellite",
+  "type": "icon",
+  "category": "science",
+  "domain": [
+    "science"
+  ],
+  "tags": [
+    "satellite",
+    "remote sensing",
+    "space",
+    "earth observation",
+    "communication"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Satellite with solar panels."
+}

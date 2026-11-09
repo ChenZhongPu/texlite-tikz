@@ -1,0 +1,21 @@
+{
+  "id": "box-plot",
+  "name": "Box plot",
+  "type": "icon",
+  "category": "data",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "box plot",
+    "distribution",
+    "quartiles",
+    "statistics"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Box plot."
+}

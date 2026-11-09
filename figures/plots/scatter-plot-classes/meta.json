@@ -1,0 +1,22 @@
+{
+  "id": "scatter-plot-classes",
+  "name": "Scatter plot",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "scatter plot",
+    "correlation",
+    "clusters",
+    "classes",
+    "embedding"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable"
+  ],
+  "description": "Two groups of points with a legend."
+}

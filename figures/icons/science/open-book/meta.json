@@ -1,0 +1,22 @@
+{
+  "id": "open-book",
+  "name": "Open book",
+  "type": "icon",
+  "category": "science",
+  "domain": [
+    "science"
+  ],
+  "tags": [
+    "book",
+    "literature",
+    "survey",
+    "knowledge",
+    "reference"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Open book."
+}

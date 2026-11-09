@@ -1,0 +1,22 @@
+{
+  "id": "stacked-bar-chart",
+  "name": "Stacked bar chart",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "bar chart",
+    "stacked",
+    "breakdown",
+    "composition",
+    "runtime"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable"
+  ],
+  "description": "Each total broken down into parts."
+}

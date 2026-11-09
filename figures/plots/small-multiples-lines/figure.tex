@@ -1,0 +1,39 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepgfplotslibrary{groupplots}
+\pgfplotsset{compat=1.18, width=8.5cm, height=5.6cm, tick label style={font=\small}, label style={font=\small}, legend cell align=left, legend style={font=\small, draw=none, fill=none}}
+
+\definecolor{plnavy}{HTML}{1F4E89}
+\definecolor{plrose}{HTML}{B85A52}
+\definecolor{plsage}{HTML}{93CC9E}
+\definecolor{plsand}{HTML}{E0BE78}
+\definecolor{plplum}{HTML}{8E7BB5}
+\definecolor{plgray}{HTML}{6E6E6E}
+
+% ==== data: one pair of columns per panel ====
+\pgfplotstableread{
+x    a1    b1    a2    b2    a3    b3
+1    42    50    30    39    55    63
+2    55    66    41    54    63    73
+4    66    78    52    67    70    81
+8    73    85    60    76    75    86
+16   77    89    65    81    78    89
+}\datatable
+
+\begin{document}
+\begin{tikzpicture}
+\begin{groupplot}[group style={group size=3 by 1, horizontal sep=9pt, y descriptions at=edge left}, width=5.1cm, height=4.6cm, ymin=20, ymax=100, xmode=log, log basis x=2, xtick={1,4,16}, xticklabels={1,4,16}, ylabel={Accuracy (\%)}, xlabel={Shots}, grid=major, grid style={plgray!15}, every axis plot/.append style={/tikz/mark size=1.5pt}]
+  \nextgroupplot[title={Task 1}]
+    \addplot[plgray, mark=*] table[x=x, y=a1] {\datatable};
+    \addplot[plnavy, mark=square*] table[x=x, y=b1] {\datatable};
+  \nextgroupplot[title={Task 2}, legend style={at={(0.5,1.22)}, anchor=south, legend columns=2, /tikz/every even column/.append style={column sep=8pt}}]
+    \addplot[plgray, mark=*] table[x=x, y=a2] {\datatable}; \addlegendentry{Baseline}
+    \addplot[plnavy, mark=square*] table[x=x, y=b2] {\datatable}; \addlegendentry{Ours}
+  \nextgroupplot[title={Task 3}]
+    \addplot[plgray, mark=*] table[x=x, y=a3] {\datatable};
+    \addplot[plnavy, mark=square*] table[x=x, y=b3] {\datatable};
+\end{groupplot}
+\end{tikzpicture}
+\end{document}

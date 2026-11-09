@@ -1,0 +1,22 @@
+{
+  "id": "product-operator",
+  "name": "Product operator",
+  "type": "icon",
+  "category": "ml",
+  "domain": [
+    "ml"
+  ],
+  "tags": [
+    "product",
+    "multiply",
+    "gating",
+    "mask",
+    "operator"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Multiplication node."
+}

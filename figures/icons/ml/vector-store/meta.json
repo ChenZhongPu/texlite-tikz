@@ -1,0 +1,23 @@
+{
+  "id": "vector-store",
+  "name": "Vector store",
+  "type": "icon",
+  "category": "ml",
+  "domain": [
+    "ml"
+  ],
+  "tags": [
+    "vector database",
+    "embedding",
+    "retrieval",
+    "rag",
+    "index",
+    "similarity search"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Database of embedding vectors."
+}

@@ -1,0 +1,17 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{tikz}
+
+\definecolor{otblue}{HTML}{0072B2}
+\definecolor{otorange}{HTML}{E69F00}
+\definecolor{otteal}{HTML}{009E73}
+\definecolor{otpurple}{HTML}{CC79A7}
+\definecolor{otgray}{HTML}{5A5A5A}
+
+\begin{document}
+\begin{tikzpicture}[line width=0.9pt]
+  \foreach \x/\y/\c in {0/0/otteal,1/0/otteal,2/0/otorange,0/1/otblue,1/1/otteal,2/1/otorange,0/2/otblue,1/2/otblue,2/2/otpurple}{
+    \filldraw[draw=\c!75!black, fill=\c!30, rounded corners=1pt] ({\x*0.78},{\y*0.78}) rectangle +(0.68,0.68);
+  }
+\end{tikzpicture}
+\end{document}

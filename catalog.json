@@ -1,0 +1,4128 @@
+{
+ "version": 1,
+ "attribution": {
+  "url": "https://opentikz.org",
+  "text": {
+   "en": "Includes figures from OpenTikZ, CC0 1.0.",
+   "zh": "部分素材来自 OpenTikZ，CC0 1.0。",
+   "zh-Hant": "部分素材來自 OpenTikZ，CC0 1.0。"
+  }
+ },
+ "categories": [
+  {
+   "id": "systems",
+   "label": {
+    "en": "Systems",
+    "zh": "系统",
+    "zh-Hant": "系統"
+   }
+  },
+  {
+   "id": "ml",
+   "label": {
+    "en": "Machine learning",
+    "zh": "机器学习",
+    "zh-Hant": "機器學習"
+   }
+  },
+  {
+   "id": "data",
+   "label": {
+    "en": "Chart icons",
+    "zh": "图表示意",
+    "zh-Hant": "圖表示意"
+   }
+  },
+  {
+   "id": "science",
+   "label": {
+    "en": "Science",
+    "zh": "科研",
+    "zh-Hant": "科研"
+   }
+  },
+  {
+   "id": "brands",
+   "label": {
+    "en": "Brands",
+    "zh": "品牌",
+    "zh-Hant": "品牌"
+   },
+   "trademark": true
+  }
+ ],
+ "items": [
+  {
+   "id": "distributed-training",
+   "name": "Distributed data-parallel training",
+   "type": "template",
+   "domain": [
+    "ml",
+    "systems"
+   ],
+   "tags": [
+    "distributed training",
+    "data parallel",
+    "parameter server",
+    "gpu",
+    "gradients",
+    "synchronization",
+    "system diagram"
+   ],
+   "description": "Editable data-parallel training figure composing the dataset, gpu, and server icons: a training-data source shards batches to GPU workers that exchange gradients and weights with a parameter server. Parametric spacing and labels.",
+   "requires": [
+    "tikz",
+    "arrows.meta",
+    "positioning"
+   ],
+   "featured": true,
+   "tex": "figures/templates/distributed-training/figure.tex",
+   "preview": "figures/templates/distributed-training/preview.svg"
+  },
+  {
+   "id": "inference-serving",
+   "name": "Model inference serving",
+   "type": "template",
+   "domain": [
+    "systems",
+    "ml"
+   ],
+   "tags": [
+    "inference",
+    "serving",
+    "deployment",
+    "load balancer",
+    "gpu",
+    "cloud",
+    "feature store",
+    "system diagram"
+   ],
+   "description": "Editable deployment figure composing the cloud, server, gpu, and database icons: client requests flow over the internet through a load balancer to GPU-backed inference nodes that read from a feature store, with a dashed inference-cluster boundary. Parametric spacing and labels.",
+   "requires": [
+    "tikz",
+    "arrows.meta",
+    "backgrounds",
+    "fit",
+    "positioning",
+    "shapes.symbols"
+   ],
+   "featured": true,
+   "tex": "figures/templates/inference-serving/figure.tex",
+   "preview": "figures/templates/inference-serving/preview.svg"
+  },
+  {
+   "id": "agent-mcp-stack",
+   "name": "Agent Tool-Use Stack (MCP)",
+   "type": "template",
+   "domain": [
+    "ml",
+    "brands"
+   ],
+   "tags": [
+    "llm",
+    "agent",
+    "mcp",
+    "tools",
+    "tool use",
+    "claude",
+    "brands",
+    "logo"
+   ],
+   "description": "LLM agent tool-use stack with brand logos: user to an LLM core to MCP servers fanning out to swappable tool cards.",
+   "requires": [
+    "tikz",
+    "svg.path",
+    "positioning",
+    "arrows.meta"
+   ],
+   "featured": false,
+   "tex": "figures/templates/agent-mcp-stack/figure.tex",
+   "preview": "figures/templates/agent-mcp-stack/preview.svg"
+  },
+  {
+   "id": "encoder-decoder",
+   "name": "Encoder-decoder (bottleneck)",
+   "type": "template",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "encoder",
+    "decoder",
+    "autoencoder",
+    "seq2seq",
+    "bottleneck",
+    "latent",
+    "representation learning",
+    "architecture"
+   ],
+   "description": "Block-level encoder-decoder 'hourglass': input block, encoder trapezoid narrowing to a latent bottleneck z, decoder trapezoid widening to an output block. Parametric sizes and labels.",
+   "requires": [
+    "tikz",
+    "arrows.meta",
+    "positioning"
+   ],
+   "featured": false,
+   "tex": "figures/templates/encoder-decoder/figure.tex",
+   "preview": "figures/templates/encoder-decoder/preview.svg"
+  },
+  {
+   "id": "neural-net",
+   "name": "Feed-forward neural network",
+   "type": "template",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "neural network",
+    "mlp",
+    "feedforward",
+    "fully connected",
+    "deep learning",
+    "architecture",
+    "layers"
+   ],
+   "description": "Parametric fully-connected feed-forward neural network. Layer count and neurons-per-layer are set by a single list at the top of the file.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/templates/neural-net/figure.tex",
+   "preview": "figures/templates/neural-net/preview.svg"
+  },
+  {
+   "id": "flowchart",
+   "name": "Flowchart (decision + loop)",
+   "type": "template",
+   "domain": [
+    "general"
+   ],
+   "tags": [
+    "flowchart",
+    "decision",
+    "diamond",
+    "process",
+    "control flow",
+    "algorithm",
+    "branch",
+    "loop"
+   ],
+   "description": "Standard flowchart: terminal pills (start/end), process rectangles, a decision diamond with Yes/No branches, and a retry loop. Parametric spacing and labels.",
+   "requires": [
+    "tikz",
+    "arrows.meta",
+    "positioning",
+    "shapes.geometric",
+    "shapes.misc"
+   ],
+   "featured": false,
+   "tex": "figures/templates/flowchart/figure.tex",
+   "preview": "figures/templates/flowchart/preview.svg"
+  },
+  {
+   "id": "llm-serving-stack",
+   "name": "LLM Serving Stack",
+   "type": "template",
+   "domain": [
+    "systems",
+    "brands"
+   ],
+   "tags": [
+    "llm",
+    "serving",
+    "inference",
+    "vllm",
+    "gpu",
+    "deployment",
+    "models",
+    "brands",
+    "logo"
+   ],
+   "description": "LLM inference serving stack with brand logos: users to a vLLM engine on a GPU cluster, serving swappable model cards.",
+   "requires": [
+    "tikz",
+    "svg.path",
+    "positioning",
+    "arrows.meta"
+   ],
+   "featured": false,
+   "tex": "figures/templates/llm-serving-stack/figure.tex",
+   "preview": "figures/templates/llm-serving-stack/preview.svg"
+  },
+  {
+   "id": "resnet-block",
+   "name": "ResNet residual block",
+   "type": "template",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "resnet",
+    "residual block",
+    "residual learning",
+    "skip connection",
+    "identity shortcut",
+    "deep learning",
+    "architecture",
+    "cnn"
+   ],
+   "description": "The classic ResNet residual learning building block (He et al.): a stack of weight layers forming F(x), an identity skip connection that re-enters at a summation node, and a final activation. The number of weight layers is driven by a single list at the top of the file.",
+   "requires": [
+    "tikz",
+    "arrows.meta"
+   ],
+   "featured": false,
+   "tex": "figures/templates/resnet-block/figure.tex",
+   "preview": "figures/templates/resnet-block/preview.svg"
+  },
+  {
+   "id": "system-block-diagram",
+   "name": "System block diagram",
+   "type": "template",
+   "domain": [
+    "systems"
+   ],
+   "tags": [
+    "system",
+    "architecture",
+    "block diagram",
+    "microservices",
+    "components",
+    "database",
+    "cache",
+    "data flow"
+   ],
+   "description": "General system architecture diagram: external client, process boxes (gateway/services), datastore cylinders (database/cache), branching connections, and a dashed subsystem group box. Multiple component types, parametric spacing.",
+   "requires": [
+    "tikz",
+    "arrows.meta",
+    "backgrounds",
+    "fit",
+    "positioning",
+    "shapes.geometric"
+   ],
+   "featured": false,
+   "tex": "figures/templates/system-block-diagram/figure.tex",
+   "preview": "figures/templates/system-block-diagram/preview.svg"
+  },
+  {
+   "id": "flash-attention",
+   "name": "FlashAttention (IO-aware attention)",
+   "type": "example",
+   "domain": [
+    "ml",
+    "systems"
+   ],
+   "tags": [
+    "flash attention",
+    "attention",
+    "transformer",
+    "gpu",
+    "memory hierarchy",
+    "sram",
+    "hbm",
+    "dram",
+    "tiling",
+    "kernel fusion",
+    "io-aware",
+    "kqv"
+   ],
+   "description": "FlashAttention, three-panel homage after Dao et al., 2022. Left: the GPU memory hierarchy as a banded triangle (SRAM 19 TB/s / HBM 1.5 TB/s / DRAM 12.8 GB/s) showing the bandwidth-vs-size trade-off. Center: the IO-aware dataflow — Q, K^T and V tiles streamed from HBM, copied block-by-block into SRAM (outer loop over K/V, inner loop over Q), where the QK^T block and softmax are fused before sm(QK^T)V is written back to HBM. Right: the GPT-2 attention runtime, a stacked PyTorch bar (Matmul/Mask/Softmax/Dropout/Matmul) versus FlashAttention's single fused kernel.",
+   "requires": [
+    "tikz",
+    "arrows.meta",
+    "calc",
+    "decorations.pathreplacing",
+    "positioning",
+    "amsmath"
+   ],
+   "featured": true,
+   "tex": "figures/examples/flash-attention/figure.tex",
+   "preview": "figures/examples/flash-attention/preview.svg"
+  },
+  {
+   "id": "gan",
+   "name": "Generative Adversarial Network (GAN)",
+   "type": "example",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "gan",
+    "generative",
+    "adversarial",
+    "generator",
+    "discriminator",
+    "latent space",
+    "real fake",
+    "architecture",
+    "deep learning"
+   ],
+   "description": "Block-level GAN overview: a low-dimensional latent bar feeds the generator G (expanding trapezoid) producing generated fake images, while a high-dimensional sample-space stack supplies real images; both feed the discriminator D (compressing trapezoid) that outputs a real/fake decision. Parametric sizes, colors, and labels.",
+   "requires": [
+    "tikz",
+    "arrows.meta",
+    "positioning"
+   ],
+   "featured": true,
+   "tex": "figures/examples/gan/figure.tex",
+   "preview": "figures/examples/gan/preview.svg"
+  },
+  {
+   "id": "lora",
+   "name": "LoRA (low-rank adaptation)",
+   "type": "example",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "lora",
+    "low-rank adaptation",
+    "fine-tuning",
+    "peft",
+    "frozen weights",
+    "adapter",
+    "transformer",
+    "merged weights"
+   ],
+   "description": "Low-rank adaptation (LoRA), two-panel homage after Hu et al., 2021. During training: a frozen pretrained weight W feeds Wx in parallel with a trainable low-rank update B·A (rank-r bottleneck, A=N(0,sigma^2), B=0) feeding BAx, summed to h. After training: the adapter is folded into a single merged weight matrix W_merged, shown as a bar–square–bar stack. Center column gives h = Wx + BAx = (W + BA)x.",
+   "requires": [
+    "tikz",
+    "arrows.meta",
+    "calc",
+    "decorations.pathreplacing",
+    "positioning",
+    "amsmath",
+    "amssymb"
+   ],
+   "featured": true,
+   "tex": "figures/examples/lora/figure.tex",
+   "preview": "figures/examples/lora/preview.svg"
+  },
+  {
+   "id": "agent-loop",
+   "name": "Agent loop",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "agent",
+    "react",
+    "tool use",
+    "planning",
+    "loop",
+    "llm"
+   ],
+   "description": "Perceive, reason and act loop of an agent.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/agent-loop/figure.tex",
+   "preview": "figures/icons/ml/agent-loop/preview.svg"
+  },
+  {
+   "id": "anthropic",
+   "name": "Anthropic",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "ai",
+    "anthropic",
+    "brand",
+    "claude",
+    "company",
+    "llm",
+    "logo"
+   ],
+   "description": "Anthropic brand mark, official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/anthropic/figure.tex",
+   "preview": "figures/icons/brands/anthropic/preview.svg"
+  },
+  {
+   "id": "arxiv",
+   "name": "arXiv",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "arxiv",
+    "brand",
+    "logo",
+    "papers",
+    "preprint",
+    "publishing"
+   ],
+   "description": "arXiv brand mark, official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/arxiv/figure.tex",
+   "preview": "figures/icons/brands/arxiv/preview.svg"
+  },
+  {
+   "id": "atom",
+   "name": "Atom",
+   "type": "icon",
+   "category": "science",
+   "domain": [
+    "science"
+   ],
+   "tags": [
+    "atom",
+    "physics",
+    "quantum",
+    "chemistry",
+    "particle"
+   ],
+   "description": "Atom with electron orbits.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/science/atom/figure.tex",
+   "preview": "figures/icons/science/atom/preview.svg"
+  },
+  {
+   "id": "attention",
+   "name": "Attention block",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "attention",
+    "transformer",
+    "self-attention",
+    "qkv",
+    "query key value",
+    "block"
+   ],
+   "description": "Attention block with query/key/value inputs and an output.",
+   "requires": [
+    "tikz",
+    "arrows.meta",
+    "positioning"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/attention/figure.tex",
+   "preview": "figures/icons/ml/attention/preview.svg"
+  },
+  {
+   "id": "bar-chart",
+   "name": "Bar chart",
+   "type": "icon",
+   "category": "data",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "bar chart",
+    "comparison",
+    "results",
+    "histogram",
+    "evaluation"
+   ],
+   "description": "Bar chart.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/data/bar-chart/figure.tex",
+   "preview": "figures/icons/data/bar-chart/preview.svg"
+  },
+  {
+   "id": "matrix",
+   "name": "Binary matrix",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "matrix",
+    "binary",
+    "bits",
+    "data",
+    "encoding",
+    "tensor"
+   ],
+   "description": "A grid of binary digits in curly braces, for raw data / encoded tensors / bit matrices.",
+   "requires": [
+    "tikz",
+    "decorations.pathreplacing"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/matrix/figure.tex",
+   "preview": "figures/icons/ml/matrix/preview.svg"
+  },
+  {
+   "id": "box-plot",
+   "name": "Box plot",
+   "type": "icon",
+   "category": "data",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "box plot",
+    "distribution",
+    "quartiles",
+    "statistics"
+   ],
+   "description": "Box plot.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/data/box-plot/figure.tex",
+   "preview": "figures/icons/data/box-plot/preview.svg"
+  },
+  {
+   "id": "brain",
+   "name": "Brain",
+   "type": "icon",
+   "category": "science",
+   "domain": [
+    "science"
+   ],
+   "tags": [
+    "brain",
+    "neuroscience",
+    "cognition",
+    "eeg",
+    "fmri"
+   ],
+   "description": "Human brain.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/science/brain/figure.tex",
+   "preview": "figures/icons/science/brain/preview.svg"
+  },
+  {
+   "id": "camera",
+   "name": "Camera",
+   "type": "icon",
+   "category": "systems",
+   "domain": [
+    "systems"
+   ],
+   "tags": [
+    "camera",
+    "image sensor",
+    "vision",
+    "capture",
+    "photo"
+   ],
+   "description": "Camera.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/systems/camera/figure.tex",
+   "preview": "figures/icons/systems/camera/preview.svg"
+  },
+  {
+   "id": "cell",
+   "name": "Cell",
+   "type": "icon",
+   "category": "science",
+   "domain": [
+    "science"
+   ],
+   "tags": [
+    "cell",
+    "biology",
+    "organism",
+    "microbiology"
+   ],
+   "description": "Biological cell.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/science/cell/figure.tex",
+   "preview": "figures/icons/science/cell/preview.svg"
+  },
+  {
+   "id": "claude",
+   "name": "Claude",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "ai",
+    "anthropic",
+    "assistant",
+    "brand",
+    "claude",
+    "llm",
+    "logo"
+   ],
+   "description": "Claude brand mark (Anthropic), official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/claude/figure.tex",
+   "preview": "figures/icons/brands/claude/preview.svg"
+  },
+  {
+   "id": "clock",
+   "name": "Clock",
+   "type": "icon",
+   "category": "systems",
+   "domain": [
+    "systems"
+   ],
+   "tags": [
+    "clock",
+    "time",
+    "latency",
+    "schedule",
+    "timer",
+    "deadline"
+   ],
+   "description": "Clock face.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/systems/clock/figure.tex",
+   "preview": "figures/icons/systems/clock/preview.svg"
+  },
+  {
+   "id": "cloud",
+   "name": "Cloud",
+   "type": "icon",
+   "category": "systems",
+   "domain": [
+    "systems"
+   ],
+   "tags": [
+    "cloud",
+    "internet",
+    "saas",
+    "remote",
+    "hosting",
+    "infrastructure"
+   ],
+   "description": "Cloud icon for internet / cloud services.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/systems/cloud/figure.tex",
+   "preview": "figures/icons/systems/cloud/preview.svg"
+  },
+  {
+   "id": "concat-operator",
+   "name": "Concatenation operator",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "concat",
+    "concatenate",
+    "fusion",
+    "merge",
+    "operator"
+   ],
+   "description": "Concatenation node.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/concat-operator/figure.tex",
+   "preview": "figures/icons/ml/concat-operator/preview.svg"
+  },
+  {
+   "id": "container",
+   "name": "Container",
+   "type": "icon",
+   "category": "systems",
+   "domain": [
+    "systems"
+   ],
+   "tags": [
+    "container",
+    "docker",
+    "box",
+    "deployment",
+    "package",
+    "microservice"
+   ],
+   "description": "A container drawn as an isometric slatted cube, for deployment and packaging diagrams.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/systems/container/figure.tex",
+   "preview": "figures/icons/systems/container/preview.svg"
+  },
+  {
+   "id": "convolution",
+   "name": "Convolution",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "convolution",
+    "cnn",
+    "kernel",
+    "filter",
+    "feature-map",
+    "stride",
+    "vision"
+   ],
+   "description": "A convolution: a sliding kernel window over a feature-map grid producing an output cell.",
+   "requires": [
+    "tikz",
+    "arrows.meta"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/convolution/figure.tex",
+   "preview": "figures/icons/ml/convolution/preview.svg"
+  },
+  {
+   "id": "cpu",
+   "name": "CPU",
+   "type": "icon",
+   "category": "systems",
+   "domain": [
+    "systems"
+   ],
+   "tags": [
+    "cpu",
+    "processor",
+    "chip",
+    "compute",
+    "hardware",
+    "core"
+   ],
+   "description": "CPU / processor chip icon with pins and a labelled core.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/systems/cpu/figure.tex",
+   "preview": "figures/icons/systems/cpu/preview.svg"
+  },
+  {
+   "id": "data-table",
+   "name": "Data table",
+   "type": "icon",
+   "category": "data",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "table",
+    "tabular",
+    "csv",
+    "spreadsheet",
+    "records"
+   ],
+   "description": "Table of records.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/data/data-table/figure.tex",
+   "preview": "figures/icons/data/data-table/preview.svg"
+  },
+  {
+   "id": "database",
+   "name": "Database",
+   "type": "icon",
+   "category": "systems",
+   "domain": [
+    "systems"
+   ],
+   "tags": [
+    "database",
+    "db",
+    "datastore",
+    "storage",
+    "sql",
+    "persistence",
+    "cylinder"
+   ],
+   "description": "Classic cylinder database / datastore icon with stripe bands.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/systems/database/figure.tex",
+   "preview": "figures/icons/systems/database/preview.svg"
+  },
+  {
+   "id": "dataset",
+   "name": "Dataset / table",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "dataset",
+    "data",
+    "table",
+    "samples",
+    "features",
+    "spreadsheet",
+    "tabular"
+   ],
+   "description": "Tabular dataset icon: a small table with a header row.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/dataset/figure.tex",
+   "preview": "figures/icons/ml/dataset/preview.svg"
+  },
+  {
+   "id": "decoder",
+   "name": "Decoder",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "decoder",
+    "generation",
+    "reconstruction",
+    "upsampling"
+   ],
+   "description": "Decoder widening from a representation.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/decoder/figure.tex",
+   "preview": "figures/icons/ml/decoder/preview.svg"
+  },
+  {
+   "id": "deepseek",
+   "name": "DeepSeek",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "ai",
+    "brand",
+    "deepseek",
+    "llm",
+    "logo",
+    "model"
+   ],
+   "description": "DeepSeek brand mark (whale), official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/deepseek/figure.tex",
+   "preview": "figures/icons/brands/deepseek/preview.svg"
+  },
+  {
+   "id": "desktop-monitor",
+   "name": "Desktop monitor",
+   "type": "icon",
+   "category": "systems",
+   "domain": [
+    "systems"
+   ],
+   "tags": [
+    "monitor",
+    "display",
+    "desktop",
+    "screen",
+    "workstation"
+   ],
+   "description": "Desktop monitor on a stand.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/systems/desktop-monitor/figure.tex",
+   "preview": "figures/icons/systems/desktop-monitor/preview.svg"
+  },
+  {
+   "id": "diffusion-noise",
+   "name": "Diffusion",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "diffusion",
+    "denoising",
+    "noise",
+    "generative",
+    "ddpm"
+   ],
+   "description": "Noise resolving into structure.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/diffusion-noise/figure.tex",
+   "preview": "figures/icons/ml/diffusion-noise/preview.svg"
+  },
+  {
+   "id": "disk",
+   "name": "Disk / storage",
+   "type": "icon",
+   "category": "systems",
+   "domain": [
+    "systems"
+   ],
+   "tags": [
+    "disk",
+    "storage",
+    "hdd",
+    "drive",
+    "persistence",
+    "hardware"
+   ],
+   "description": "A hard disk drive: enclosure with a platter, spindle hub, and read/write arm.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/systems/disk/figure.tex",
+   "preview": "figures/icons/systems/disk/preview.svg"
+  },
+  {
+   "id": "dna-helix",
+   "name": "DNA helix",
+   "type": "icon",
+   "category": "science",
+   "domain": [
+    "science"
+   ],
+   "tags": [
+    "dna",
+    "genomics",
+    "biology",
+    "gene",
+    "sequence",
+    "bioinformatics"
+   ],
+   "description": "DNA double helix.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/science/dna-helix/figure.tex",
+   "preview": "figures/icons/science/dna-helix/preview.svg"
+  },
+  {
+   "id": "docker",
+   "name": "Docker",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "brand",
+    "container",
+    "deployment",
+    "devops",
+    "docker",
+    "logo"
+   ],
+   "description": "Docker brand mark (whale with containers), official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/docker/figure.tex",
+   "preview": "figures/icons/brands/docker/preview.svg"
+  },
+  {
+   "id": "dropout",
+   "name": "Dropout",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "dropout",
+    "regularization",
+    "neural network",
+    "mlp"
+   ],
+   "description": "Network layer with dropped units.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/dropout/figure.tex",
+   "preview": "figures/icons/ml/dropout/preview.svg"
+  },
+  {
+   "id": "ecg-signal",
+   "name": "ECG signal",
+   "type": "icon",
+   "category": "science",
+   "domain": [
+    "science"
+   ],
+   "tags": [
+    "ecg",
+    "heartbeat",
+    "physiology",
+    "medical",
+    "signal",
+    "healthcare"
+   ],
+   "description": "Electrocardiogram trace.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/science/ecg-signal/figure.tex",
+   "preview": "figures/icons/science/ecg-signal/preview.svg"
+  },
+  {
+   "id": "embedding",
+   "name": "Embedding vector",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "embedding",
+    "vector",
+    "representation",
+    "latent",
+    "feature",
+    "encoding"
+   ],
+   "description": "An embedding vector drawn as a bracketed column of weighted cells.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/embedding/figure.tex",
+   "preview": "figures/icons/ml/embedding/preview.svg"
+  },
+  {
+   "id": "encoder",
+   "name": "Encoder",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "encoder",
+    "compression",
+    "bottleneck",
+    "representation"
+   ],
+   "description": "Encoder narrowing toward a representation.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/encoder/figure.tex",
+   "preview": "figures/icons/ml/encoder/preview.svg"
+  },
+  {
+   "id": "file",
+   "name": "File",
+   "type": "icon",
+   "category": "systems",
+   "domain": [
+    "systems"
+   ],
+   "tags": [
+    "file",
+    "document",
+    "text",
+    "log",
+    "artifact",
+    "output"
+   ],
+   "description": "Document file with a folded corner.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/systems/file/figure.tex",
+   "preview": "figures/icons/systems/file/preview.svg"
+  },
+  {
+   "id": "firewall",
+   "name": "Firewall",
+   "type": "icon",
+   "category": "systems",
+   "domain": [
+    "systems"
+   ],
+   "tags": [
+    "firewall",
+    "security",
+    "network",
+    "wall",
+    "protection"
+   ],
+   "description": "Brick firewall.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/systems/firewall/figure.tex",
+   "preview": "figures/icons/systems/firewall/preview.svg"
+  },
+  {
+   "id": "flask",
+   "name": "Flask",
+   "type": "icon",
+   "category": "science",
+   "domain": [
+    "science"
+   ],
+   "tags": [
+    "flask",
+    "chemistry",
+    "laboratory",
+    "reaction",
+    "experiment"
+   ],
+   "description": "Erlenmeyer flask.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/science/flask/figure.tex",
+   "preview": "figures/icons/science/flask/preview.svg"
+  },
+  {
+   "id": "folder",
+   "name": "Folder",
+   "type": "icon",
+   "category": "systems",
+   "domain": [
+    "systems"
+   ],
+   "tags": [
+    "folder",
+    "directory",
+    "files",
+    "storage",
+    "repository"
+   ],
+   "description": "File folder.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/systems/folder/figure.tex",
+   "preview": "figures/icons/systems/folder/preview.svg"
+  },
+  {
+   "id": "gear",
+   "name": "Gear",
+   "type": "icon",
+   "category": "systems",
+   "domain": [
+    "systems"
+   ],
+   "tags": [
+    "gear",
+    "settings",
+    "process",
+    "pipeline",
+    "configuration",
+    "operation"
+   ],
+   "description": "Gear for a processing step.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/systems/gear/figure.tex",
+   "preview": "figures/icons/systems/gear/preview.svg"
+  },
+  {
+   "id": "git",
+   "name": "Git",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "branch",
+    "brand",
+    "git",
+    "logo",
+    "vcs",
+    "version control"
+   ],
+   "description": "Git brand mark, official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/git/figure.tex",
+   "preview": "figures/icons/brands/git/preview.svg"
+  },
+  {
+   "id": "github",
+   "name": "GitHub",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "brand",
+    "code hosting",
+    "github",
+    "logo",
+    "open source",
+    "repository"
+   ],
+   "description": "GitHub brand mark (Octocat silhouette), official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/github/figure.tex",
+   "preview": "figures/icons/brands/github/preview.svg"
+  },
+  {
+   "id": "github-copilot",
+   "name": "GitHub Copilot",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "ai",
+    "brand",
+    "coding assistant",
+    "copilot",
+    "github",
+    "github-copilot",
+    "logo"
+   ],
+   "description": "GitHub Copilot brand mark, official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/github-copilot/figure.tex",
+   "preview": "figures/icons/brands/github-copilot/preview.svg"
+  },
+  {
+   "id": "globe",
+   "name": "Globe",
+   "type": "icon",
+   "category": "science",
+   "domain": [
+    "science"
+   ],
+   "tags": [
+    "globe",
+    "earth",
+    "geoscience",
+    "climate",
+    "global",
+    "web"
+   ],
+   "description": "Globe with latitude and longitude lines.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/science/globe/figure.tex",
+   "preview": "figures/icons/science/globe/preview.svg"
+  },
+  {
+   "id": "google",
+   "name": "Google",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "ai",
+    "brand",
+    "company",
+    "google",
+    "logo",
+    "search"
+   ],
+   "description": "Google brand mark (G), official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/google/figure.tex",
+   "preview": "figures/icons/brands/google/preview.svg"
+  },
+  {
+   "id": "google-cloud",
+   "name": "Google Cloud",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "brand",
+    "cloud",
+    "gcp",
+    "google-cloud",
+    "infrastructure",
+    "logo"
+   ],
+   "description": "Google Cloud brand mark, official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/google-cloud/figure.tex",
+   "preview": "figures/icons/brands/google-cloud/preview.svg"
+  },
+  {
+   "id": "google-colab",
+   "name": "Google Colab",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "brand",
+    "colab",
+    "google-colab",
+    "gpu",
+    "logo",
+    "notebook"
+   ],
+   "description": "Google Colab brand mark, official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/google-colab/figure.tex",
+   "preview": "figures/icons/brands/google-colab/preview.svg"
+  },
+  {
+   "id": "google-gemini",
+   "name": "Google Gemini",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "ai",
+    "brand",
+    "gemini",
+    "google-gemini",
+    "llm",
+    "logo",
+    "model"
+   ],
+   "description": "Google Gemini brand mark, official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/google-gemini/figure.tex",
+   "preview": "figures/icons/brands/google-gemini/preview.svg"
+  },
+  {
+   "id": "google-scholar",
+   "name": "Google Scholar",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "brand",
+    "citations",
+    "google-scholar",
+    "logo",
+    "papers",
+    "search"
+   ],
+   "description": "Google Scholar brand mark, official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/google-scholar/figure.tex",
+   "preview": "figures/icons/brands/google-scholar/preview.svg"
+  },
+  {
+   "id": "gpu",
+   "name": "GPU",
+   "type": "icon",
+   "category": "systems",
+   "domain": [
+    "systems"
+   ],
+   "tags": [
+    "gpu",
+    "graphics card",
+    "accelerator",
+    "compute",
+    "hardware",
+    "cuda"
+   ],
+   "description": "GPU / graphics-card icon with a fan and gold edge connector.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/systems/gpu/figure.tex",
+   "preview": "figures/icons/systems/gpu/preview.svg"
+  },
+  {
+   "id": "gradient-descent",
+   "name": "Gradient descent",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "gradient descent",
+    "optimization",
+    "optimizer",
+    "loss surface",
+    "training"
+   ],
+   "description": "Descent path over loss contours.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/gradient-descent/figure.tex",
+   "preview": "figures/icons/ml/gradient-descent/preview.svg"
+  },
+  {
+   "id": "heatmap",
+   "name": "Heatmap",
+   "type": "icon",
+   "category": "data",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "heatmap",
+    "confusion matrix",
+    "correlation",
+    "attention map"
+   ],
+   "description": "Heatmap grid.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/data/heatmap/figure.tex",
+   "preview": "figures/icons/data/heatmap/preview.svg"
+  },
+  {
+   "id": "histogram",
+   "name": "Histogram",
+   "type": "icon",
+   "category": "data",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "histogram",
+    "distribution",
+    "frequency",
+    "statistics"
+   ],
+   "description": "Histogram with a density curve.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/data/histogram/figure.tex",
+   "preview": "figures/icons/data/histogram/preview.svg"
+  },
+  {
+   "id": "huggingface",
+   "name": "Hugging Face",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "brand",
+    "hub",
+    "huggingface",
+    "logo",
+    "ml",
+    "models",
+    "nlp"
+   ],
+   "description": "Hugging Face brand mark (smiling face), official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/huggingface/figure.tex",
+   "preview": "figures/icons/brands/huggingface/preview.svg"
+  },
+  {
+   "id": "lightbulb",
+   "name": "Idea",
+   "type": "icon",
+   "category": "science",
+   "domain": [
+    "science"
+   ],
+   "tags": [
+    "idea",
+    "lightbulb",
+    "insight",
+    "hypothesis",
+    "innovation"
+   ],
+   "description": "Light bulb.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/science/lightbulb/figure.tex",
+   "preview": "figures/icons/science/lightbulb/preview.svg"
+  },
+  {
+   "id": "ieee",
+   "name": "IEEE",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "brand",
+    "ieee",
+    "logo",
+    "papers",
+    "publisher",
+    "standards"
+   ],
+   "description": "IEEE brand mark, official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/ieee/figure.tex",
+   "preview": "figures/icons/brands/ieee/preview.svg"
+  },
+  {
+   "id": "image-patches",
+   "name": "Image patches",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "image patches",
+    "vision transformer",
+    "vit",
+    "patch embedding",
+    "grid"
+   ],
+   "description": "Image split into patches.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/image-patches/figure.tex",
+   "preview": "figures/icons/ml/image-patches/preview.svg"
+  },
+  {
+   "id": "jupyter",
+   "name": "Jupyter",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "brand",
+    "jupyter",
+    "logo",
+    "notebook",
+    "python",
+    "tooling"
+   ],
+   "description": "Jupyter brand mark (three moons), official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/jupyter/figure.tex",
+   "preview": "figures/icons/brands/jupyter/preview.svg"
+  },
+  {
+   "id": "kaggle",
+   "name": "Kaggle",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "brand",
+    "competition",
+    "dataset",
+    "kaggle",
+    "logo",
+    "ml"
+   ],
+   "description": "Kaggle brand mark (k), official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/kaggle/figure.tex",
+   "preview": "figures/icons/brands/kaggle/preview.svg"
+  },
+  {
+   "id": "keras",
+   "name": "Keras",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "brand",
+    "deep learning",
+    "framework",
+    "keras",
+    "logo",
+    "ml"
+   ],
+   "description": "Keras brand mark (K), official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/keras/figure.tex",
+   "preview": "figures/icons/brands/keras/preview.svg"
+  },
+  {
+   "id": "knowledge-graph",
+   "name": "Knowledge graph",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "knowledge graph",
+    "graph",
+    "entities",
+    "relations",
+    "gnn",
+    "ontology"
+   ],
+   "description": "Entities joined by relations.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/knowledge-graph/figure.tex",
+   "preview": "figures/icons/ml/knowledge-graph/preview.svg"
+  },
+  {
+   "id": "kubernetes",
+   "name": "Kubernetes",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "brand",
+    "container",
+    "devops",
+    "k8s",
+    "kubernetes",
+    "logo",
+    "orchestration"
+   ],
+   "description": "Kubernetes brand mark (helm wheel), official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/kubernetes/figure.tex",
+   "preview": "figures/icons/brands/kubernetes/preview.svg"
+  },
+  {
+   "id": "langchain",
+   "name": "LangChain",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "agents",
+    "ai",
+    "brand",
+    "framework",
+    "langchain",
+    "llm",
+    "logo"
+   ],
+   "description": "LangChain brand mark, official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/langchain/figure.tex",
+   "preview": "figures/icons/brands/langchain/preview.svg"
+  },
+  {
+   "id": "laptop",
+   "name": "Laptop",
+   "type": "icon",
+   "category": "systems",
+   "domain": [
+    "systems"
+   ],
+   "tags": [
+    "laptop",
+    "client",
+    "workstation",
+    "computer"
+   ],
+   "description": "Laptop computer.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/systems/laptop/figure.tex",
+   "preview": "figures/icons/systems/laptop/preview.svg"
+  },
+  {
+   "id": "latex",
+   "name": "LaTeX",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "brand",
+    "latex",
+    "logo",
+    "tex",
+    "typesetting",
+    "writing"
+   ],
+   "description": "LaTeX wordmark, official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/latex/figure.tex",
+   "preview": "figures/icons/brands/latex/preview.svg"
+  },
+  {
+   "id": "layer",
+   "name": "Layer / feature maps",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "layer",
+    "feature map",
+    "tensor",
+    "conv",
+    "activation",
+    "stack",
+    "channels"
+   ],
+   "description": "Stacked feature maps representing a network layer / tensor.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/layer/figure.tex",
+   "preview": "figures/icons/ml/layer/preview.svg"
+  },
+  {
+   "id": "line-chart",
+   "name": "Line chart",
+   "type": "icon",
+   "category": "data",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "line chart",
+    "trend",
+    "curve",
+    "results",
+    "learning curve"
+   ],
+   "description": "Line chart with two series.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/data/line-chart/figure.tex",
+   "preview": "figures/icons/data/line-chart/preview.svg"
+  },
+  {
+   "id": "linux",
+   "name": "Linux",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "brand",
+    "linux",
+    "logo",
+    "operating system",
+    "os",
+    "penguin",
+    "tux"
+   ],
+   "description": "Linux brand mark (Tux the penguin), official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/linux/figure.tex",
+   "preview": "figures/icons/brands/linux/preview.svg"
+  },
+  {
+   "id": "loss",
+   "name": "Loss curve",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "loss",
+    "objective",
+    "training",
+    "convergence",
+    "optimization",
+    "curve"
+   ],
+   "description": "A training-loss curve descending to a converged minimum on loss-vs-epoch axes.",
+   "requires": [
+    "tikz",
+    "arrows.meta"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/loss/figure.tex",
+   "preview": "figures/icons/ml/loss/preview.svg"
+  },
+  {
+   "id": "magnifier",
+   "name": "Magnifier",
+   "type": "icon",
+   "category": "science",
+   "domain": [
+    "science"
+   ],
+   "tags": [
+    "magnifier",
+    "search",
+    "inspect",
+    "analysis",
+    "detail",
+    "zoom"
+   ],
+   "description": "Magnifying glass.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/science/magnifier/figure.tex",
+   "preview": "figures/icons/science/magnifier/preview.svg"
+  },
+  {
+   "id": "medical-cross",
+   "name": "Medical cross",
+   "type": "icon",
+   "category": "science",
+   "domain": [
+    "science"
+   ],
+   "tags": [
+    "medical",
+    "healthcare",
+    "hospital",
+    "clinical",
+    "health"
+   ],
+   "description": "Medical cross.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/science/medical-cross/figure.tex",
+   "preview": "figures/icons/science/medical-cross/preview.svg"
+  },
+  {
+   "id": "queue",
+   "name": "Message queue",
+   "type": "icon",
+   "category": "systems",
+   "domain": [
+    "systems"
+   ],
+   "tags": [
+    "queue",
+    "fifo",
+    "buffer",
+    "message",
+    "kafka",
+    "pipeline",
+    "broker"
+   ],
+   "description": "A FIFO message queue: buffered items with enqueue and dequeue arrows.",
+   "requires": [
+    "tikz",
+    "arrows.meta"
+   ],
+   "featured": false,
+   "tex": "figures/icons/systems/queue/figure.tex",
+   "preview": "figures/icons/systems/queue/preview.svg"
+  },
+  {
+   "id": "meta",
+   "name": "Meta",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "ai",
+    "brand",
+    "company",
+    "llama",
+    "logo",
+    "meta",
+    "social"
+   ],
+   "description": "Meta brand mark (infinity loop), official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/meta/figure.tex",
+   "preview": "figures/icons/brands/meta/preview.svg"
+  },
+  {
+   "id": "microscope",
+   "name": "Microscope",
+   "type": "icon",
+   "category": "science",
+   "domain": [
+    "science"
+   ],
+   "tags": [
+    "microscope",
+    "biology",
+    "imaging",
+    "laboratory",
+    "experiment"
+   ],
+   "description": "Laboratory microscope.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/science/microscope/figure.tex",
+   "preview": "figures/icons/science/microscope/preview.svg"
+  },
+  {
+   "id": "mistral",
+   "name": "Mistral AI",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "ai",
+    "brand",
+    "llm",
+    "logo",
+    "mistral",
+    "mistral ai",
+    "model"
+   ],
+   "description": "Mistral AI brand mark, official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/mistral/figure.tex",
+   "preview": "figures/icons/brands/mistral/preview.svg"
+  },
+  {
+   "id": "mobile",
+   "name": "Mobile / edge device",
+   "type": "icon",
+   "category": "systems",
+   "domain": [
+    "systems"
+   ],
+   "tags": [
+    "mobile",
+    "phone",
+    "edge",
+    "device",
+    "client",
+    "on-device"
+   ],
+   "description": "A handset representing a mobile or edge device, for client- and edge-side blocks.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/systems/mobile/figure.tex",
+   "preview": "figures/icons/systems/mobile/preview.svg"
+  },
+  {
+   "id": "model",
+   "name": "Model",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "model",
+    "network",
+    "ai",
+    "checkpoint",
+    "weights",
+    "black-box"
+   ],
+   "description": "A generic model: a rounded box marked with an AI sparkle, for use as a black-box network.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/model/figure.tex",
+   "preview": "figures/icons/ml/model/preview.svg"
+  },
+  {
+   "id": "mcp",
+   "name": "Model Context Protocol",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "agents",
+    "ai",
+    "brand",
+    "llm",
+    "logo",
+    "mcp",
+    "model context protocol",
+    "protocol"
+   ],
+   "description": "Model Context Protocol (MCP) brand mark, official color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/mcp/figure.tex",
+   "preview": "figures/icons/brands/mcp/preview.svg"
+  },
+  {
+   "id": "molecule",
+   "name": "Molecule",
+   "type": "icon",
+   "category": "science",
+   "domain": [
+    "science"
+   ],
+   "tags": [
+    "molecule",
+    "chemistry",
+    "compound",
+    "drug",
+    "bond"
+   ],
+   "description": "Ball-and-stick molecule.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/science/molecule/figure.tex",
+   "preview": "figures/icons/science/molecule/preview.svg"
+  },
+  {
+   "id": "network",
+   "name": "Network",
+   "type": "icon",
+   "category": "systems",
+   "domain": [
+    "systems"
+   ],
+   "tags": [
+    "network",
+    "topology",
+    "nodes",
+    "hub",
+    "graph",
+    "connectivity"
+   ],
+   "description": "A small network topology: a central hub linked to four peer nodes.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/systems/network/figure.tex",
+   "preview": "figures/icons/systems/network/preview.svg"
+  },
+  {
+   "id": "neuron",
+   "name": "Neuron",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "neuron",
+    "perceptron",
+    "unit",
+    "node",
+    "neural network",
+    "activation"
+   ],
+   "description": "Single artificial neuron / perceptron with weighted inputs and one output.",
+   "requires": [
+    "tikz",
+    "arrows.meta"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/neuron/figure.tex",
+   "preview": "figures/icons/ml/neuron/preview.svg"
+  },
+  {
+   "id": "numpy",
+   "name": "NumPy",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "array",
+    "brand",
+    "logo",
+    "numpy",
+    "python",
+    "scientific computing"
+   ],
+   "description": "NumPy brand mark, official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/numpy/figure.tex",
+   "preview": "figures/icons/brands/numpy/preview.svg"
+  },
+  {
+   "id": "nvidia",
+   "name": "NVIDIA",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "brand",
+    "company",
+    "cuda",
+    "gpu",
+    "hardware",
+    "logo",
+    "nvidia"
+   ],
+   "description": "NVIDIA brand mark, official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/nvidia/figure.tex",
+   "preview": "figures/icons/brands/nvidia/preview.svg"
+  },
+  {
+   "id": "ollama",
+   "name": "Ollama",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "ai",
+    "brand",
+    "llm",
+    "local inference",
+    "logo",
+    "ollama",
+    "tooling"
+   ],
+   "description": "Ollama brand mark, official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/ollama/figure.tex",
+   "preview": "figures/icons/brands/ollama/preview.svg"
+  },
+  {
+   "id": "open-book",
+   "name": "Open book",
+   "type": "icon",
+   "category": "science",
+   "domain": [
+    "science"
+   ],
+   "tags": [
+    "book",
+    "literature",
+    "survey",
+    "knowledge",
+    "reference"
+   ],
+   "description": "Open book.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/science/open-book/figure.tex",
+   "preview": "figures/icons/science/open-book/preview.svg"
+  },
+  {
+   "id": "orcid",
+   "name": "ORCID",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "brand",
+    "identity",
+    "logo",
+    "orcid",
+    "publishing",
+    "researcher id"
+   ],
+   "description": "ORCID brand mark (iD), official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/orcid/figure.tex",
+   "preview": "figures/icons/brands/orcid/preview.svg"
+  },
+  {
+   "id": "overleaf",
+   "name": "Overleaf",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "brand",
+    "editor",
+    "latex",
+    "logo",
+    "overleaf",
+    "writing"
+   ],
+   "description": "Overleaf brand mark, official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/overleaf/figure.tex",
+   "preview": "figures/icons/brands/overleaf/preview.svg"
+  },
+  {
+   "id": "padlock",
+   "name": "Padlock",
+   "type": "icon",
+   "category": "systems",
+   "domain": [
+    "systems"
+   ],
+   "tags": [
+    "lock",
+    "security",
+    "privacy",
+    "encryption",
+    "access control"
+   ],
+   "description": "Closed padlock.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/systems/padlock/figure.tex",
+   "preview": "figures/icons/systems/padlock/preview.svg"
+  },
+  {
+   "id": "pandas",
+   "name": "pandas",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "brand",
+    "data analysis",
+    "dataframe",
+    "logo",
+    "pandas",
+    "python"
+   ],
+   "description": "pandas brand mark, official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/pandas/figure.tex",
+   "preview": "figures/icons/brands/pandas/preview.svg"
+  },
+  {
+   "id": "perplexity",
+   "name": "Perplexity",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "ai",
+    "assistant",
+    "brand",
+    "llm",
+    "logo",
+    "perplexity",
+    "search"
+   ],
+   "description": "Perplexity brand mark, official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/perplexity/figure.tex",
+   "preview": "figures/icons/brands/perplexity/preview.svg"
+  },
+  {
+   "id": "pie-chart",
+   "name": "Pie chart",
+   "type": "icon",
+   "category": "data",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "pie chart",
+    "proportion",
+    "share",
+    "composition"
+   ],
+   "description": "Pie chart.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/data/pie-chart/figure.tex",
+   "preview": "figures/icons/data/pie-chart/preview.svg"
+  },
+  {
+   "id": "pooling",
+   "name": "Pooling",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "pooling",
+    "downsampling",
+    "max pool",
+    "average pool",
+    "cnn"
+   ],
+   "description": "Pooling a grid into a smaller one.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/pooling/figure.tex",
+   "preview": "figures/icons/ml/pooling/preview.svg"
+  },
+  {
+   "id": "product-operator",
+   "name": "Product operator",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "product",
+    "multiply",
+    "gating",
+    "mask",
+    "operator"
+   ],
+   "description": "Multiplication node.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/product-operator/figure.tex",
+   "preview": "figures/icons/ml/product-operator/preview.svg"
+  },
+  {
+   "id": "chat-prompt",
+   "name": "Prompt",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "prompt",
+    "chat",
+    "llm",
+    "conversation",
+    "instruction",
+    "dialogue"
+   ],
+   "description": "Chat prompt bubble.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/chat-prompt/figure.tex",
+   "preview": "figures/icons/ml/chat-prompt/preview.svg"
+  },
+  {
+   "id": "python",
+   "name": "Python",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "brand",
+    "language",
+    "logo",
+    "programming",
+    "python",
+    "snake"
+   ],
+   "description": "Python brand mark (two snakes), official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/python/figure.tex",
+   "preview": "figures/icons/brands/python/preview.svg"
+  },
+  {
+   "id": "pytorch",
+   "name": "PyTorch",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "brand",
+    "deep learning",
+    "framework",
+    "logo",
+    "ml",
+    "pytorch"
+   ],
+   "description": "PyTorch brand mark (flame), official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/pytorch/figure.tex",
+   "preview": "figures/icons/brands/pytorch/preview.svg"
+  },
+  {
+   "id": "qwen",
+   "name": "Qwen",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "ai",
+    "alibaba",
+    "brand",
+    "llm",
+    "logo",
+    "model",
+    "qwen"
+   ],
+   "description": "Qwen brand mark (Alibaba), official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/qwen/figure.tex",
+   "preview": "figures/icons/brands/qwen/preview.svg"
+  },
+  {
+   "id": "recurrent-cell",
+   "name": "Recurrent cell",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "rnn",
+    "lstm",
+    "gru",
+    "recurrent",
+    "sequence",
+    "hidden state"
+   ],
+   "description": "Recurrent cell with a feedback loop.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/recurrent-cell/figure.tex",
+   "preview": "figures/icons/ml/recurrent-cell/preview.svg"
+  },
+  {
+   "id": "reddit",
+   "name": "Reddit",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "brand",
+    "community",
+    "forum",
+    "logo",
+    "reddit",
+    "social"
+   ],
+   "description": "Reddit brand mark (Snoo), official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/reddit/figure.tex",
+   "preview": "figures/icons/brands/reddit/preview.svg"
+  },
+  {
+   "id": "research-paper",
+   "name": "Research paper",
+   "type": "icon",
+   "category": "science",
+   "domain": [
+    "science"
+   ],
+   "tags": [
+    "paper",
+    "publication",
+    "article",
+    "manuscript",
+    "literature"
+   ],
+   "description": "Two-column research paper.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/science/research-paper/figure.tex",
+   "preview": "figures/icons/science/research-paper/preview.svg"
+  },
+  {
+   "id": "researcher",
+   "name": "Researcher",
+   "type": "icon",
+   "category": "science",
+   "domain": [
+    "science"
+   ],
+   "tags": [
+    "researcher",
+    "scientist",
+    "student",
+    "scholar",
+    "human",
+    "participant"
+   ],
+   "description": "Person wearing a graduation cap.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/science/researcher/figure.tex",
+   "preview": "figures/icons/science/researcher/preview.svg"
+  },
+  {
+   "id": "robot",
+   "name": "Robot",
+   "type": "icon",
+   "category": "systems",
+   "domain": [
+    "systems"
+   ],
+   "tags": [
+    "robot",
+    "robotics",
+    "automation",
+    "embodied",
+    "agent"
+   ],
+   "description": "Robot head.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/systems/robot/figure.tex",
+   "preview": "figures/icons/systems/robot/preview.svg"
+  },
+  {
+   "id": "router",
+   "name": "Router",
+   "type": "icon",
+   "category": "systems",
+   "domain": [
+    "systems"
+   ],
+   "tags": [
+    "router",
+    "network",
+    "gateway",
+    "wifi",
+    "switch"
+   ],
+   "description": "Network router with antennas.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/systems/router/figure.tex",
+   "preview": "figures/icons/systems/router/preview.svg"
+  },
+  {
+   "id": "satellite",
+   "name": "Satellite",
+   "type": "icon",
+   "category": "science",
+   "domain": [
+    "science"
+   ],
+   "tags": [
+    "satellite",
+    "remote sensing",
+    "space",
+    "earth observation",
+    "communication"
+   ],
+   "description": "Satellite with solar panels.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/science/satellite/figure.tex",
+   "preview": "figures/icons/science/satellite/preview.svg"
+  },
+  {
+   "id": "scatter-plot",
+   "name": "Scatter plot",
+   "type": "icon",
+   "category": "data",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "scatter plot",
+    "clusters",
+    "correlation",
+    "points",
+    "embedding"
+   ],
+   "description": "Scatter plot with two clusters.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/data/scatter-plot/figure.tex",
+   "preview": "figures/icons/data/scatter-plot/preview.svg"
+  },
+  {
+   "id": "scikit-learn",
+   "name": "scikit-learn",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "brand",
+    "logo",
+    "machine learning",
+    "ml",
+    "python",
+    "scikit-learn",
+    "sklearn"
+   ],
+   "description": "scikit-learn brand mark, official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/scikit-learn/figure.tex",
+   "preview": "figures/icons/brands/scikit-learn/preview.svg"
+  },
+  {
+   "id": "semantic-scholar",
+   "name": "Semantic Scholar",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "brand",
+    "citations",
+    "logo",
+    "papers",
+    "search",
+    "semantic-scholar"
+   ],
+   "description": "Semantic Scholar brand mark, official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/semantic-scholar/figure.tex",
+   "preview": "figures/icons/brands/semantic-scholar/preview.svg"
+  },
+  {
+   "id": "sensor",
+   "name": "Sensor",
+   "type": "icon",
+   "category": "systems",
+   "domain": [
+    "systems"
+   ],
+   "tags": [
+    "sensor",
+    "iot",
+    "signal",
+    "edge",
+    "wireless",
+    "measurement"
+   ],
+   "description": "Sensor broadcasting a signal.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/systems/sensor/figure.tex",
+   "preview": "figures/icons/systems/sensor/preview.svg"
+  },
+  {
+   "id": "server",
+   "name": "Server",
+   "type": "icon",
+   "category": "systems",
+   "domain": [
+    "systems"
+   ],
+   "tags": [
+    "server",
+    "rack",
+    "compute",
+    "infrastructure",
+    "datacenter",
+    "hardware"
+   ],
+   "description": "A rack-style server icon: stacked rack units with status LEDs and ventilation slits. Parametric unit count.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/systems/server/figure.tex",
+   "preview": "figures/icons/systems/server/preview.svg"
+  },
+  {
+   "id": "shield",
+   "name": "Shield",
+   "type": "icon",
+   "category": "systems",
+   "domain": [
+    "systems"
+   ],
+   "tags": [
+    "shield",
+    "security",
+    "safety",
+    "defense",
+    "trust",
+    "verified"
+   ],
+   "description": "Security shield with a check mark.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/systems/shield/figure.tex",
+   "preview": "figures/icons/systems/shield/preview.svg"
+  },
+  {
+   "id": "sum-operator",
+   "name": "Sum operator",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "sum",
+    "add",
+    "skip connection",
+    "residual",
+    "operator"
+   ],
+   "description": "Summation node.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/sum-operator/figure.tex",
+   "preview": "figures/icons/ml/sum-operator/preview.svg"
+  },
+  {
+   "id": "target",
+   "name": "Target",
+   "type": "icon",
+   "category": "science",
+   "domain": [
+    "science"
+   ],
+   "tags": [
+    "target",
+    "goal",
+    "objective",
+    "accuracy",
+    "ground truth"
+   ],
+   "description": "Target with an arrow.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/science/target/figure.tex",
+   "preview": "figures/icons/science/target/preview.svg"
+  },
+  {
+   "id": "telescope",
+   "name": "Telescope",
+   "type": "icon",
+   "category": "science",
+   "domain": [
+    "science"
+   ],
+   "tags": [
+    "telescope",
+    "astronomy",
+    "observation",
+    "optics",
+    "space"
+   ],
+   "description": "Telescope on a tripod.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/science/telescope/figure.tex",
+   "preview": "figures/icons/science/telescope/preview.svg"
+  },
+  {
+   "id": "tensor",
+   "name": "Tensor",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "tensor",
+    "array",
+    "matrix",
+    "input",
+    "multidimensional"
+   ],
+   "description": "Three-dimensional tensor.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/tensor/figure.tex",
+   "preview": "figures/icons/ml/tensor/preview.svg"
+  },
+  {
+   "id": "tensorflow",
+   "name": "TensorFlow",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "brand",
+    "deep learning",
+    "framework",
+    "logo",
+    "ml",
+    "tensorflow"
+   ],
+   "description": "TensorFlow brand mark, official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/tensorflow/figure.tex",
+   "preview": "figures/icons/brands/tensorflow/preview.svg"
+  },
+  {
+   "id": "terminal",
+   "name": "Terminal",
+   "type": "icon",
+   "category": "systems",
+   "domain": [
+    "systems"
+   ],
+   "tags": [
+    "terminal",
+    "shell",
+    "command line",
+    "console",
+    "code",
+    "script"
+   ],
+   "description": "Terminal window with a command prompt.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/systems/terminal/figure.tex",
+   "preview": "figures/icons/systems/terminal/preview.svg"
+  },
+  {
+   "id": "test-tube",
+   "name": "Test tube",
+   "type": "icon",
+   "category": "science",
+   "domain": [
+    "science"
+   ],
+   "tags": [
+    "test tube",
+    "sample",
+    "chemistry",
+    "biology",
+    "assay"
+   ],
+   "description": "Test tube holding a sample.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/science/test-tube/figure.tex",
+   "preview": "figures/icons/science/test-tube/preview.svg"
+  },
+  {
+   "id": "time-series",
+   "name": "Time series",
+   "type": "icon",
+   "category": "data",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "time series",
+    "signal",
+    "waveform",
+    "forecasting",
+    "temporal"
+   ],
+   "description": "Time-series signal.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/data/time-series/figure.tex",
+   "preview": "figures/icons/data/time-series/preview.svg"
+  },
+  {
+   "id": "token-sequence",
+   "name": "Token sequence",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "tokens",
+    "tokenization",
+    "sequence",
+    "text",
+    "nlp",
+    "llm"
+   ],
+   "description": "Sequence of tokens.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/token-sequence/figure.tex",
+   "preview": "figures/icons/ml/token-sequence/preview.svg"
+  },
+  {
+   "id": "transformer-block",
+   "name": "Transformer block",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "transformer",
+    "attention",
+    "feed forward",
+    "normalization",
+    "llm"
+   ],
+   "description": "Stacked transformer block.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/transformer-block/figure.tex",
+   "preview": "figures/icons/ml/transformer-block/preview.svg"
+  },
+  {
+   "id": "tree-diagram",
+   "name": "Tree",
+   "type": "icon",
+   "category": "data",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "tree",
+    "hierarchy",
+    "decision tree",
+    "taxonomy",
+    "clustering"
+   ],
+   "description": "Hierarchical tree.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/data/tree-diagram/figure.tex",
+   "preview": "figures/icons/data/tree-diagram/preview.svg"
+  },
+  {
+   "id": "user",
+   "name": "User",
+   "type": "icon",
+   "category": "systems",
+   "domain": [
+    "systems"
+   ],
+   "tags": [
+    "user",
+    "client",
+    "person",
+    "actor",
+    "human",
+    "account"
+   ],
+   "description": "A user/client avatar: head and shoulders silhouette, for system actors and endpoints.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/systems/user/figure.tex",
+   "preview": "figures/icons/systems/user/preview.svg"
+  },
+  {
+   "id": "vector-store",
+   "name": "Vector store",
+   "type": "icon",
+   "category": "ml",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "vector database",
+    "embedding",
+    "retrieval",
+    "rag",
+    "index",
+    "similarity search"
+   ],
+   "description": "Database of embedding vectors.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/icons/ml/vector-store/figure.tex",
+   "preview": "figures/icons/ml/vector-store/preview.svg"
+  },
+  {
+   "id": "vllm",
+   "name": "vLLM",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "ai",
+    "brand",
+    "inference",
+    "llm",
+    "logo",
+    "serving",
+    "vllm"
+   ],
+   "description": "vLLM brand mark, official two-tone colors (yellow + blue).",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/vllm/figure.tex",
+   "preview": "figures/icons/brands/vllm/preview.svg"
+  },
+  {
+   "id": "wandb",
+   "name": "Weights & Biases",
+   "type": "icon",
+   "category": "brands",
+   "domain": [
+    "brands"
+   ],
+   "tags": [
+    "brand",
+    "experiment tracking",
+    "logo",
+    "mlops",
+    "wandb",
+    "weights and biases"
+   ],
+   "description": "Weights & Biases brand mark, official brand color.",
+   "requires": [
+    "tikz",
+    "svg.path"
+   ],
+   "featured": false,
+   "tex": "figures/icons/brands/wandb/figure.tex",
+   "preview": "figures/icons/brands/wandb/preview.svg"
+  },
+  {
+   "id": "surface-3d",
+   "name": "3D surface",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "3D",
+    "surface",
+    "loss landscape",
+    "function"
+   ],
+   "description": "Faceted surface of an analytic function, for example a loss landscape.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable"
+   ],
+   "featured": false,
+   "tex": "figures/plots/surface-3d/figure.tex",
+   "preview": "figures/plots/surface-3d/preview.svg"
+  },
+  {
+   "id": "bar-chart-error",
+   "name": "Bar chart with error bars",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "bar chart",
+    "error bars",
+    "standard deviation",
+    "statistics"
+   ],
+   "description": "Bars showing a mean with symmetric error bars.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable"
+   ],
+   "featured": false,
+   "tex": "figures/plots/bar-chart-error/figure.tex",
+   "preview": "figures/plots/bar-chart-error/preview.svg"
+  },
+  {
+   "id": "bar-per-method-colors",
+   "name": "Bars colored by method family",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "bar chart",
+    "error bars",
+    "method comparison",
+    "truncated axis",
+    "AUROC"
+   ],
+   "description": "One bar per method with its own color and error bar, on an open axis that starts above zero.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable"
+   ],
+   "featured": false,
+   "tex": "figures/plots/bar-per-method-colors/figure.tex",
+   "preview": "figures/plots/bar-per-method-colors/preview.svg"
+  },
+  {
+   "id": "broken-axis-bars",
+   "name": "Bars with a broken axis",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "bar chart",
+    "broken axis",
+    "outlier",
+    "axis break"
+   ],
+   "description": "Two stacked panels with break marks, so one very tall bar does not flatten the others.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable",
+    "groupplots"
+   ],
+   "featured": false,
+   "tex": "figures/plots/broken-axis-bars/figure.tex",
+   "preview": "figures/plots/broken-axis-bars/preview.svg"
+  },
+  {
+   "id": "box-plot-groups",
+   "name": "Box plot",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "box plot",
+    "distribution",
+    "quartiles",
+    "statistics"
+   ],
+   "description": "Distribution of several groups from their summary statistics.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable",
+    "statistics"
+   ],
+   "featured": false,
+   "tex": "figures/plots/box-plot-groups/figure.tex",
+   "preview": "figures/plots/box-plot-groups/preview.svg"
+  },
+  {
+   "id": "bubble-chart",
+   "name": "Bubble chart",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "bubble",
+    "scatter",
+    "three variables",
+    "labels",
+    "tradeoff"
+   ],
+   "description": "Labeled scatter where the marker radius encodes a third quantity.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable"
+   ],
+   "featured": false,
+   "tex": "figures/plots/bubble-chart/figure.tex",
+   "preview": "figures/plots/bubble-chart/preview.svg"
+  },
+  {
+   "id": "concept-distributions",
+   "name": "Concept distributions",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "concept plot",
+    "distribution",
+    "density",
+    "annotation",
+    "illustration",
+    "schematic"
+   ],
+   "description": "Filled analytic curves with an annotated gap, for explaining an idea rather than reporting measurements.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable"
+   ],
+   "featured": false,
+   "tex": "figures/plots/concept-distributions/figure.tex",
+   "preview": "figures/plots/concept-distributions/preview.svg"
+  },
+  {
+   "id": "confusion-matrix",
+   "name": "Confusion matrix",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "confusion matrix",
+    "classification",
+    "evaluation",
+    "matrix"
+   ],
+   "description": "Confusion matrix with the count printed in each cell.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable"
+   ],
+   "featured": false,
+   "tex": "figures/plots/confusion-matrix/figure.tex",
+   "preview": "figures/plots/confusion-matrix/preview.svg"
+  },
+  {
+   "id": "dual-axis-chart",
+   "name": "Dual-axis chart",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "dual axis",
+    "two y axes",
+    "trade-off",
+    "latency",
+    "throughput"
+   ],
+   "description": "Two quantities with different units over a shared horizontal axis.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable"
+   ],
+   "featured": false,
+   "tex": "figures/plots/dual-axis-chart/figure.tex",
+   "preview": "figures/plots/dual-axis-chart/preview.svg"
+  },
+  {
+   "id": "dumbbell-plot",
+   "name": "Dumbbell plot",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "dumbbell",
+    "before after",
+    "paired",
+    "improvement"
+   ],
+   "description": "Paired values joined by a line, for showing the change between two conditions.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable"
+   ],
+   "featured": false,
+   "tex": "figures/plots/dumbbell-plot/figure.tex",
+   "preview": "figures/plots/dumbbell-plot/preview.svg"
+  },
+  {
+   "id": "ecdf-steps",
+   "name": "Empirical CDF",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "CDF",
+    "distribution",
+    "latency",
+    "steps",
+    "percentile"
+   ],
+   "description": "Step-wise cumulative distributions with a dashed guide at the 90th percentile.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable"
+   ],
+   "featured": false,
+   "tex": "figures/plots/ecdf-steps/figure.tex",
+   "preview": "figures/plots/ecdf-steps/preview.svg"
+  },
+  {
+   "id": "grouped-bar-chart",
+   "name": "Grouped bar chart",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "bar chart",
+    "grouped",
+    "comparison",
+    "benchmark",
+    "evaluation"
+   ],
+   "description": "Methods compared side by side across datasets.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable"
+   ],
+   "featured": false,
+   "tex": "figures/plots/grouped-bar-chart/figure.tex",
+   "preview": "figures/plots/grouped-bar-chart/preview.svg"
+  },
+  {
+   "id": "grouped-bar-hatched",
+   "name": "Grouped bars with hatching",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "bar chart",
+    "grouped",
+    "hatch",
+    "pattern",
+    "grayscale",
+    "print"
+   ],
+   "description": "Grouped bars distinguished by hatching as well as color, so they survive grayscale printing.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable",
+    "patterns"
+   ],
+   "featured": false,
+   "tex": "figures/plots/grouped-bar-hatched/figure.tex",
+   "preview": "figures/plots/grouped-bar-hatched/preview.svg"
+  },
+  {
+   "id": "stacked-hatched-panels",
+   "name": "Hatched stacked bars in panels",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "stacked bar",
+    "hatch",
+    "pattern",
+    "probability",
+    "small multiples",
+    "method comparison"
+   ],
+   "description": "Two panels of 100% stacked bars with hatched outer segments, one color per method and the lowest share printed on each bar.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable",
+    "groupplots",
+    "patterns"
+   ],
+   "featured": false,
+   "tex": "figures/plots/stacked-hatched-panels/figure.tex",
+   "preview": "figures/plots/stacked-hatched-panels/preview.svg"
+  },
+  {
+   "id": "heatmap-matrix",
+   "name": "Heatmap",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "heatmap",
+    "matrix",
+    "correlation",
+    "attention map"
+   ],
+   "description": "Matrix of values drawn with a color bar.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable"
+   ],
+   "featured": false,
+   "tex": "figures/plots/heatmap-matrix/figure.tex",
+   "preview": "figures/plots/heatmap-matrix/preview.svg"
+  },
+  {
+   "id": "histogram-distribution",
+   "name": "Histogram",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "histogram",
+    "distribution",
+    "frequency",
+    "statistics"
+   ],
+   "description": "Frequency histogram computed from raw values.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable",
+    "statistics"
+   ],
+   "featured": false,
+   "tex": "figures/plots/histogram-distribution/figure.tex",
+   "preview": "figures/plots/histogram-distribution/preview.svg"
+  },
+  {
+   "id": "learning-curve-band",
+   "name": "Learning curve with error band",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "learning curve",
+    "training",
+    "error band",
+    "standard deviation",
+    "confidence interval"
+   ],
+   "description": "Mean curves with shaded standard-deviation bands.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable",
+    "fillbetween"
+   ],
+   "featured": false,
+   "tex": "figures/plots/learning-curve-band/figure.tex",
+   "preview": "figures/plots/learning-curve-band/preview.svg"
+  },
+  {
+   "id": "log-log-scaling",
+   "name": "Log-log scaling plot",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "log scale",
+    "log-log",
+    "scaling",
+    "complexity",
+    "power law"
+   ],
+   "description": "Runtime scaling on logarithmic axes.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable"
+   ],
+   "featured": false,
+   "tex": "figures/plots/log-log-scaling/figure.tex",
+   "preview": "figures/plots/log-log-scaling/preview.svg"
+  },
+  {
+   "id": "lollipop-effects",
+   "name": "Lollipop chart",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "lollipop",
+    "effect size",
+    "importance",
+    "signed"
+   ],
+   "description": "Signed values as stems from a zero line, lighter than bars when there are many categories.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable"
+   ],
+   "featured": false,
+   "tex": "figures/plots/lollipop-effects/figure.tex",
+   "preview": "figures/plots/lollipop-effects/preview.svg"
+  },
+  {
+   "id": "line-chart-multi",
+   "name": "Multi-series line chart",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "line chart",
+    "comparison",
+    "curve",
+    "results",
+    "baseline"
+   ],
+   "description": "Several methods compared across one variable, with markers and a legend.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable"
+   ],
+   "featured": false,
+   "tex": "figures/plots/line-chart-multi/figure.tex",
+   "preview": "figures/plots/line-chart-multi/preview.svg"
+  },
+  {
+   "id": "pareto-front",
+   "name": "Pareto front",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "pareto",
+    "tradeoff",
+    "multi-objective",
+    "scatter"
+   ],
+   "description": "Candidate points with the non-dominated set joined as a step line and the better direction marked.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable"
+   ],
+   "featured": false,
+   "tex": "figures/plots/pareto-front/figure.tex",
+   "preview": "figures/plots/pareto-front/preview.svg"
+  },
+  {
+   "id": "precision-recall-curve",
+   "name": "Precision-recall curve",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "precision",
+    "recall",
+    "F1",
+    "classification",
+    "evaluation"
+   ],
+   "description": "Precision-recall curves with dashed iso-F1 contours.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable"
+   ],
+   "featured": false,
+   "tex": "figures/plots/precision-recall-curve/figure.tex",
+   "preview": "figures/plots/precision-recall-curve/preview.svg"
+  },
+  {
+   "id": "radar-common-scale",
+   "name": "Radar chart with one scale",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "radar chart",
+    "spider chart",
+    "capabilities",
+    "profile"
+   ],
+   "description": "Polygon radar with a shared 0 to 100 scale for comparing two profiles.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/plots/radar-common-scale/figure.tex",
+   "preview": "figures/plots/radar-common-scale/preview.svg"
+  },
+  {
+   "id": "radar-per-axis-scale",
+   "name": "Radar chart with per-axis scales",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "radar chart",
+    "spider chart",
+    "benchmark",
+    "per-axis scale",
+    "multi-metric"
+   ],
+   "description": "Polygon radar comparing methods across benchmarks, where every spoke has its own range and printed ticks.",
+   "requires": [
+    "tikz"
+   ],
+   "featured": false,
+   "tex": "figures/plots/radar-per-axis-scale/figure.tex",
+   "preview": "figures/plots/radar-per-axis-scale/preview.svg"
+  },
+  {
+   "id": "horizontal-bar-ranked",
+   "name": "Ranked horizontal bars",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "bar chart",
+    "horizontal",
+    "ranking",
+    "leaderboard"
+   ],
+   "description": "Horizontal bars sorted by score with the value printed at the end of each bar.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable"
+   ],
+   "featured": false,
+   "tex": "figures/plots/horizontal-bar-ranked/figure.tex",
+   "preview": "figures/plots/horizontal-bar-ranked/preview.svg"
+  },
+  {
+   "id": "calibration-reliability",
+   "name": "Reliability diagram",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "calibration",
+    "reliability",
+    "ECE",
+    "confidence",
+    "evaluation"
+   ],
+   "description": "Accuracy per confidence bin with the hatched gap to perfect calibration.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable",
+    "patterns"
+   ],
+   "featured": false,
+   "tex": "figures/plots/calibration-reliability/figure.tex",
+   "preview": "figures/plots/calibration-reliability/preview.svg"
+  },
+  {
+   "id": "ridgeline-plot",
+   "name": "Ridgeline plot",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "ridgeline",
+    "joy plot",
+    "distribution",
+    "density",
+    "comparison"
+   ],
+   "description": "Overlapping density curves stacked by group to show how a distribution shifts.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable"
+   ],
+   "featured": false,
+   "tex": "figures/plots/ridgeline-plot/figure.tex",
+   "preview": "figures/plots/ridgeline-plot/preview.svg"
+  },
+  {
+   "id": "roc-curve",
+   "name": "ROC curve",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "ROC",
+    "AUC",
+    "classification",
+    "evaluation"
+   ],
+   "description": "Receiver operating characteristic curves for several classifiers with the chance diagonal.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable"
+   ],
+   "featured": false,
+   "tex": "figures/plots/roc-curve/figure.tex",
+   "preview": "figures/plots/roc-curve/preview.svg"
+  },
+  {
+   "id": "scatter-plot-classes",
+   "name": "Scatter plot",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "scatter plot",
+    "correlation",
+    "clusters",
+    "classes",
+    "embedding"
+   ],
+   "description": "Two groups of points with a legend.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable"
+   ],
+   "featured": false,
+   "tex": "figures/plots/scatter-plot-classes/figure.tex",
+   "preview": "figures/plots/scatter-plot-classes/preview.svg"
+  },
+  {
+   "id": "scatter-regression",
+   "name": "Scatter with linear fit",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "scatter",
+    "regression",
+    "correlation",
+    "fit",
+    "trend"
+   ],
+   "description": "Scatter plot with a least-squares line computed from the data when the figure compiles.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable"
+   ],
+   "featured": false,
+   "tex": "figures/plots/scatter-regression/figure.tex",
+   "preview": "figures/plots/scatter-regression/preview.svg"
+  },
+  {
+   "id": "small-multiples-lines",
+   "name": "Small multiples",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "small multiples",
+    "panels",
+    "line chart",
+    "shared axis",
+    "groupplots"
+   ],
+   "description": "Three line-chart panels that share a y axis and a single legend.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable",
+    "groupplots"
+   ],
+   "featured": false,
+   "tex": "figures/plots/small-multiples-lines/figure.tex",
+   "preview": "figures/plots/small-multiples-lines/preview.svg"
+  },
+  {
+   "id": "stacked-area",
+   "name": "Stacked area chart",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "area",
+    "stacked",
+    "composition",
+    "time series",
+    "share"
+   ],
+   "description": "Contributions stacked over time, with the total as the top edge.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable"
+   ],
+   "featured": false,
+   "tex": "figures/plots/stacked-area/figure.tex",
+   "preview": "figures/plots/stacked-area/preview.svg"
+  },
+  {
+   "id": "stacked-bar-chart",
+   "name": "Stacked bar chart",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "bar chart",
+    "stacked",
+    "breakdown",
+    "composition",
+    "runtime"
+   ],
+   "description": "Each total broken down into parts.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable"
+   ],
+   "featured": false,
+   "tex": "figures/plots/stacked-bar-chart/figure.tex",
+   "preview": "figures/plots/stacked-bar-chart/preview.svg"
+  },
+  {
+   "id": "violin-plot",
+   "name": "Violin plot",
+   "type": "plot",
+   "domain": [
+    "data"
+   ],
+   "tags": [
+    "violin",
+    "distribution",
+    "density",
+    "statistics",
+    "groups"
+   ],
+   "description": "Mirrored density shapes per group, drawn from a one or two component normal mixture, with a median marker.",
+   "requires": [
+    "pgfplots",
+    "pgfplotstable"
+   ],
+   "featured": false,
+   "tex": "figures/plots/violin-plot/figure.tex",
+   "preview": "figures/plots/violin-plot/preview.svg"
+  }
+ ]
+}

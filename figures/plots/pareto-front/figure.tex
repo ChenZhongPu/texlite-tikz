@@ -1,0 +1,45 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\pgfplotsset{compat=1.18, width=8.5cm, height=5.6cm, tick label style={font=\small}, label style={font=\small}, legend cell align=left, legend style={font=\small, draw=none, fill=none}}
+
+\definecolor{plnavy}{HTML}{1F4E89}
+\definecolor{plrose}{HTML}{B85A52}
+\definecolor{plsage}{HTML}{93CC9E}
+\definecolor{plsand}{HTML}{E0BE78}
+\definecolor{plplum}{HTML}{8E7BB5}
+\definecolor{plgray}{HTML}{6E6E6E}
+
+% ==== data: all candidates, then the non-dominated ones in x order ====
+\pgfplotstableread{
+cost  acc
+18    62
+26    60
+33    70
+41    66
+47    75
+52    71
+61    78
+70    74
+78    80
+88    77
+}\candidates
+\pgfplotstableread{
+cost  acc
+10    65
+22    72
+36    79
+55    84
+82    88
+}\front
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[xmin=0, xmax=100, ymin=55, ymax=95, xlabel={Cost}, ylabel={Accuracy (\%)}, grid=major, grid style={plgray!15}, legend pos=south east]
+  \addplot[only marks, mark=*, mark size=2pt, draw=plgray, fill=plgray!35] table[x=cost, y=acc] {\candidates}; \addlegendentry{Candidates}
+  \addplot[const plot, plnavy, line width=1.2pt, mark=*, mark size=2.4pt, mark options={fill=plnavy!70}] table[x=cost, y=acc] {\front}; \addlegendentry{Pareto front}
+  \draw[-stealth, plrose!90!black, line width=1.2pt] (axis cs:22,84) -- (axis cs:10,91) node[midway, below left=1pt, font=\scriptsize] {better};
+\end{axis}
+\end{tikzpicture}
+\end{document}

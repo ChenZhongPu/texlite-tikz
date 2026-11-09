@@ -1,0 +1,22 @@
+{
+  "id": "stacked-area",
+  "name": "Stacked area chart",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "area",
+    "stacked",
+    "composition",
+    "time series",
+    "share"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable"
+  ],
+  "description": "Contributions stacked over time, with the total as the top edge."
+}

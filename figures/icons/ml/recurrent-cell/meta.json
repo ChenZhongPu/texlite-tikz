@@ -1,0 +1,23 @@
+{
+  "id": "recurrent-cell",
+  "name": "Recurrent cell",
+  "type": "icon",
+  "category": "ml",
+  "domain": [
+    "ml"
+  ],
+  "tags": [
+    "rnn",
+    "lstm",
+    "gru",
+    "recurrent",
+    "sequence",
+    "hidden state"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Recurrent cell with a feedback loop."
+}

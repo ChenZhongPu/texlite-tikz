@@ -1,0 +1,38 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\pgfplotsset{compat=1.18, width=8.5cm, height=5.6cm, tick label style={font=\small}, label style={font=\small}, legend cell align=left, legend style={font=\small, draw=none, fill=none}}
+
+\definecolor{plnavy}{HTML}{1F4E89}
+\definecolor{plrose}{HTML}{B85A52}
+\definecolor{plsage}{HTML}{93CC9E}
+\definecolor{plsand}{HTML}{E0BE78}
+\definecolor{plplum}{HTML}{8E7BB5}
+\definecolor{plgray}{HTML}{6E6E6E}
+
+% ==== data: replace with your own (shared false-positive rates) ====
+\pgfplotstableread{
+fpr   a     b     c
+0.00  0.00  0.00  0.00
+0.02  0.08  0.16  0.30
+0.05  0.18  0.31  0.52
+0.10  0.31  0.48  0.68
+0.20  0.50  0.66  0.82
+0.30  0.63  0.77  0.89
+0.45  0.76  0.87  0.94
+0.60  0.86  0.93  0.97
+0.80  0.95  0.98  0.99
+1.00  1.00  1.00  1.00
+}\datatable
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[width=7.2cm, height=7.2cm, xmin=0, xmax=1, ymin=0, ymax=1.01, xlabel={False positive rate}, ylabel={True positive rate}, no markers, grid=major, grid style={plgray!15}, legend pos=south east, thick]
+  \addplot[plgray, line width=1.1pt] table[x=fpr, y=a] {\datatable}; \addlegendentry{Baseline (AUC 0.75)}
+  \addplot[plsage!70!black, line width=1.1pt] table[x=fpr, y=b] {\datatable}; \addlegendentry{Variant (AUC 0.83)}
+  \addplot[plnavy, line width=1.1pt] table[x=fpr, y=c] {\datatable}; \addlegendentry{Ours (AUC 0.90)}
+  \addplot[plgray!60, dashed, domain=0:1, samples=2, forget plot] {x};
+\end{axis}
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,23 @@
+{
+  "id": "globe",
+  "name": "Globe",
+  "type": "icon",
+  "category": "science",
+  "domain": [
+    "science"
+  ],
+  "tags": [
+    "globe",
+    "earth",
+    "geoscience",
+    "climate",
+    "global",
+    "web"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Globe with latitude and longitude lines."
+}

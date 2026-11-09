@@ -1,0 +1,22 @@
+{
+  "id": "ecdf-steps",
+  "name": "Empirical CDF",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "CDF",
+    "distribution",
+    "latency",
+    "steps",
+    "percentile"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable"
+  ],
+  "description": "Step-wise cumulative distributions with a dashed guide at the 90th percentile."
+}

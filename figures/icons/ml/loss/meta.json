@@ -1,0 +1,24 @@
+{
+  "id": "loss",
+  "name": "Loss curve",
+  "type": "icon",
+  "category": "ml",
+  "author": "OpenTikZ contributors",
+  "description": "A training-loss curve descending to a converged minimum on loss-vs-epoch axes.",
+  "domain": [
+    "ml"
+  ],
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz",
+    "arrows.meta"
+  ],
+  "tags": [
+    "loss",
+    "objective",
+    "training",
+    "convergence",
+    "optimization",
+    "curve"
+  ]
+}

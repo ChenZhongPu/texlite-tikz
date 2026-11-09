@@ -1,0 +1,21 @@
+{
+  "id": "dropout",
+  "name": "Dropout",
+  "type": "icon",
+  "category": "ml",
+  "domain": [
+    "ml"
+  ],
+  "tags": [
+    "dropout",
+    "regularization",
+    "neural network",
+    "mlp"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Network layer with dropped units."
+}

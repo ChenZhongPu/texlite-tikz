@@ -1,0 +1,22 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{tikz}
+
+\definecolor{otblue}{HTML}{0072B2}
+\definecolor{otorange}{HTML}{E69F00}
+\definecolor{otteal}{HTML}{009E73}
+\definecolor{otpurple}{HTML}{CC79A7}
+\definecolor{otgray}{HTML}{5A5A5A}
+
+\begin{document}
+\begin{tikzpicture}[line width=0.9pt]
+  \draw[otgray!80!black, line width=1.4pt] (1.25,1.75) -- (1.25,2.2);
+  \fill[otorange!85!black] (1.25,2.28) circle[radius=0.12];
+  \filldraw[draw=otgray!80!black, fill=otgray!15, rounded corners=1pt] (-0.2,0.6) rectangle (0,1.2);
+  \filldraw[draw=otgray!80!black, fill=otgray!15, rounded corners=1pt] (2.5,0.6) rectangle (2.7,1.2);
+  \filldraw[draw=otblue!75!black, fill=otblue!15, rounded corners=7pt] (0,0) rectangle (2.5,1.8);
+  \fill[otblue!75!black] (0.78,1.15) circle[radius=0.2];
+  \fill[otblue!75!black] (1.72,1.15) circle[radius=0.2];
+  \draw[otblue!75!black, line width=1.6pt, line cap=round] (0.75,0.48) -- (1.75,0.48);
+\end{tikzpicture}
+\end{document}

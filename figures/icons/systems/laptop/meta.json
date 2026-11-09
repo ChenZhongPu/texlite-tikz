@@ -1,0 +1,21 @@
+{
+  "id": "laptop",
+  "name": "Laptop",
+  "type": "icon",
+  "category": "systems",
+  "domain": [
+    "systems"
+  ],
+  "tags": [
+    "laptop",
+    "client",
+    "workstation",
+    "computer"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Laptop computer."
+}

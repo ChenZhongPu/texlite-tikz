@@ -1,0 +1,21 @@
+{
+  "id": "surface-3d",
+  "name": "3D surface",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "3D",
+    "surface",
+    "loss landscape",
+    "function"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable"
+  ],
+  "description": "Faceted surface of an analytic function, for example a loss landscape."
+}

@@ -1,0 +1,22 @@
+{
+  "id": "diffusion-noise",
+  "name": "Diffusion",
+  "type": "icon",
+  "category": "ml",
+  "domain": [
+    "ml"
+  ],
+  "tags": [
+    "diffusion",
+    "denoising",
+    "noise",
+    "generative",
+    "ddpm"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Noise resolving into structure."
+}

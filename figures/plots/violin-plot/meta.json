@@ -1,0 +1,22 @@
+{
+  "id": "violin-plot",
+  "name": "Violin plot",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "violin",
+    "distribution",
+    "density",
+    "statistics",
+    "groups"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable"
+  ],
+  "description": "Mirrored density shapes per group, drawn from a one or two component normal mixture, with a median marker."
+}

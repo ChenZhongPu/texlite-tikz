@@ -1,0 +1,24 @@
+{
+  "id": "grouped-bar-hatched",
+  "name": "Grouped bars with hatching",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "bar chart",
+    "grouped",
+    "hatch",
+    "pattern",
+    "grayscale",
+    "print"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable",
+    "patterns"
+  ],
+  "description": "Grouped bars distinguished by hatching as well as color, so they survive grayscale printing."
+}

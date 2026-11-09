@@ -1,0 +1,22 @@
+{
+  "id": "transformer-block",
+  "name": "Transformer block",
+  "type": "icon",
+  "category": "ml",
+  "domain": [
+    "ml"
+  ],
+  "tags": [
+    "transformer",
+    "attention",
+    "feed forward",
+    "normalization",
+    "llm"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Stacked transformer block."
+}

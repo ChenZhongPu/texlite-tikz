@@ -1,0 +1,22 @@
+{
+  "id": "histogram-distribution",
+  "name": "Histogram",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "histogram",
+    "distribution",
+    "frequency",
+    "statistics"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable",
+    "statistics"
+  ],
+  "description": "Frequency histogram computed from raw values."
+}

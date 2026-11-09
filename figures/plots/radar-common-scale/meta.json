@@ -1,0 +1,20 @@
+{
+  "id": "radar-common-scale",
+  "name": "Radar chart with one scale",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "radar chart",
+    "spider chart",
+    "capabilities",
+    "profile"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Polygon radar with a shared 0 to 100 scale for comparing two profiles."
+}

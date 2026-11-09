@@ -1,0 +1,22 @@
+{
+  "id": "test-tube",
+  "name": "Test tube",
+  "type": "icon",
+  "category": "science",
+  "domain": [
+    "science"
+  ],
+  "tags": [
+    "test tube",
+    "sample",
+    "chemistry",
+    "biology",
+    "assay"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Test tube holding a sample."
+}

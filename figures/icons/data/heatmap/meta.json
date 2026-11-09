@@ -1,0 +1,21 @@
+{
+  "id": "heatmap",
+  "name": "Heatmap",
+  "type": "icon",
+  "category": "data",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "heatmap",
+    "confusion matrix",
+    "correlation",
+    "attention map"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Heatmap grid."
+}

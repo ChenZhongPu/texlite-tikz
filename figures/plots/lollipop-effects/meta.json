@@ -1,0 +1,21 @@
+{
+  "id": "lollipop-effects",
+  "name": "Lollipop chart",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "lollipop",
+    "effect size",
+    "importance",
+    "signed"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable"
+  ],
+  "description": "Signed values as stems from a zero line, lighter than bars when there are many categories."
+}

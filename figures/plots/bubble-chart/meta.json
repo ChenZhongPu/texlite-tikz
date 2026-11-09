@@ -1,0 +1,22 @@
+{
+  "id": "bubble-chart",
+  "name": "Bubble chart",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "bubble",
+    "scatter",
+    "three variables",
+    "labels",
+    "tradeoff"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable"
+  ],
+  "description": "Labeled scatter where the marker radius encodes a third quantity."
+}

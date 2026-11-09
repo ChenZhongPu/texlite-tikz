@@ -1,0 +1,33 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\pgfplotsset{compat=1.18, width=8.5cm, height=5.6cm, tick label style={font=\small}, label style={font=\small}, legend cell align=left, legend style={font=\small, draw=none, fill=none}}
+
+\definecolor{plnavy}{HTML}{1F4E89}
+\definecolor{plrose}{HTML}{B85A52}
+\definecolor{plsage}{HTML}{93CC9E}
+\definecolor{plsand}{HTML}{E0BE78}
+\definecolor{plplum}{HTML}{8E7BB5}
+\definecolor{plgray}{HTML}{6E6E6E}
+
+% ==== data: replace with your own ====
+\pgfplotstableread{
+feature  effect
+F1       0.42
+F2       0.31
+F3       0.18
+F4       0.07
+F5       -0.05
+F6       -0.14
+F7       -0.26
+F8       -0.38
+}\datatable
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[ycomb, ymin=-0.5, ymax=0.5, xmin=-0.6, xmax=7.6, ylabel={Effect size}, xtick=data, xticklabels from table={\datatable}{feature}, xtick style={draw=none}, ymajorgrids, grid style={plgray!20}, extra y ticks={0}, extra y tick labels={}, extra y tick style={grid style={plgray, line width=0.7pt}}, yticklabel style={/pgf/number format/fixed}]
+  \addplot[plnavy, line width=1.3pt, mark=*, mark size=3pt, mark options={fill=plnavy!70}] table[x expr=\coordindex, y=effect] {\datatable};
+\end{axis}
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,17 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{tikz}
+
+\definecolor{otblue}{HTML}{0072B2}
+\definecolor{otorange}{HTML}{E69F00}
+\definecolor{otteal}{HTML}{009E73}
+\definecolor{otpurple}{HTML}{CC79A7}
+\definecolor{otgray}{HTML}{5A5A5A}
+
+\begin{document}
+\begin{tikzpicture}[line width=0.9pt]
+  \foreach \a in {0,45,...,315}{\fill[otgray!70, rotate=\a] (-0.21,0.72) rectangle (0.21,1.1);}
+  \fill[otgray!70] (0,0) circle[radius=0.88];
+  \fill[white] (0,0) circle[radius=0.36];
+\end{tikzpicture}
+\end{document}

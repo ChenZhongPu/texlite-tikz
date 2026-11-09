@@ -1,0 +1,23 @@
+{
+  "id": "agent-loop",
+  "name": "Agent loop",
+  "type": "icon",
+  "category": "ml",
+  "domain": [
+    "ml"
+  ],
+  "tags": [
+    "agent",
+    "react",
+    "tool use",
+    "planning",
+    "loop",
+    "llm"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Perceive, reason and act loop of an agent."
+}

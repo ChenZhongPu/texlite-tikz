@@ -1,0 +1,21 @@
+{
+  "id": "pareto-front",
+  "name": "Pareto front",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "pareto",
+    "tradeoff",
+    "multi-objective",
+    "scatter"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable"
+  ],
+  "description": "Candidate points with the non-dominated set joined as a step line and the better direction marked."
+}

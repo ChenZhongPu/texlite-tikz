@@ -1,0 +1,25 @@
+{
+  "id": "scikit-learn",
+  "name": "scikit-learn",
+  "type": "icon",
+  "category": "brands",
+  "author": "Daniel Huang",
+  "description": "scikit-learn brand mark, official brand color.",
+  "domain": [
+    "brands"
+  ],
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz",
+    "svg.path"
+  ],
+  "tags": [
+    "brand",
+    "logo",
+    "machine learning",
+    "ml",
+    "python",
+    "scikit-learn",
+    "sklearn"
+  ]
+}

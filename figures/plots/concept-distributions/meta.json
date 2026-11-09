@@ -1,0 +1,23 @@
+{
+  "id": "concept-distributions",
+  "name": "Concept distributions",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "concept plot",
+    "distribution",
+    "density",
+    "annotation",
+    "illustration",
+    "schematic"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable"
+  ],
+  "description": "Filled analytic curves with an annotated gap, for explaining an idea rather than reporting measurements."
+}

@@ -1,0 +1,21 @@
+{
+  "id": "histogram",
+  "name": "Histogram",
+  "type": "icon",
+  "category": "data",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "histogram",
+    "distribution",
+    "frequency",
+    "statistics"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Histogram with a density curve."
+}

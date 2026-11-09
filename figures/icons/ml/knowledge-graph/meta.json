@@ -1,0 +1,23 @@
+{
+  "id": "knowledge-graph",
+  "name": "Knowledge graph",
+  "type": "icon",
+  "category": "ml",
+  "domain": [
+    "ml"
+  ],
+  "tags": [
+    "knowledge graph",
+    "graph",
+    "entities",
+    "relations",
+    "gnn",
+    "ontology"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Entities joined by relations."
+}

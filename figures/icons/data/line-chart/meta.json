@@ -1,0 +1,22 @@
+{
+  "id": "line-chart",
+  "name": "Line chart",
+  "type": "icon",
+  "category": "data",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "line chart",
+    "trend",
+    "curve",
+    "results",
+    "learning curve"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Line chart with two series."
+}

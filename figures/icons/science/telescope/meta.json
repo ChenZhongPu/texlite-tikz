@@ -1,0 +1,22 @@
+{
+  "id": "telescope",
+  "name": "Telescope",
+  "type": "icon",
+  "category": "science",
+  "domain": [
+    "science"
+  ],
+  "tags": [
+    "telescope",
+    "astronomy",
+    "observation",
+    "optics",
+    "space"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Telescope on a tripod."
+}

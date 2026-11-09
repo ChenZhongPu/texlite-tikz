@@ -1,0 +1,22 @@
+{
+  "id": "medical-cross",
+  "name": "Medical cross",
+  "type": "icon",
+  "category": "science",
+  "domain": [
+    "science"
+  ],
+  "tags": [
+    "medical",
+    "healthcare",
+    "hospital",
+    "clinical",
+    "health"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Medical cross."
+}

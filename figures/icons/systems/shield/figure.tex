@@ -1,0 +1,16 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{tikz}
+
+\definecolor{otblue}{HTML}{0072B2}
+\definecolor{otorange}{HTML}{E69F00}
+\definecolor{otteal}{HTML}{009E73}
+\definecolor{otpurple}{HTML}{CC79A7}
+\definecolor{otgray}{HTML}{5A5A5A}
+
+\begin{document}
+\begin{tikzpicture}[line width=0.9pt]
+  \filldraw[draw=otteal!75!black, fill=otteal!15, line join=round] (1,2.4) .. controls (1.5,2.1) and (1.9,2.05) .. (2,2.05) -- (2,1.2) .. controls (2,0.6) and (1.5,0.2) .. (1,0) .. controls (0.5,0.2) and (0,0.6) .. (0,1.2) -- (0,2.05) .. controls (0.1,2.05) and (0.5,2.1) .. (1,2.4) -- cycle;
+  \draw[otteal!75!black, line width=2.2pt, line cap=round, line join=round] (0.55,1.2) -- (0.92,0.82) -- (1.5,1.55);
+\end{tikzpicture}
+\end{document}

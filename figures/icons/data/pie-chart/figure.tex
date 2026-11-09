@@ -1,0 +1,17 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{tikz}
+
+\definecolor{otblue}{HTML}{0072B2}
+\definecolor{otorange}{HTML}{E69F00}
+\definecolor{otteal}{HTML}{009E73}
+\definecolor{otpurple}{HTML}{CC79A7}
+\definecolor{otgray}{HTML}{5A5A5A}
+
+\begin{document}
+\begin{tikzpicture}[line width=0.9pt]
+  \filldraw[draw=otblue!75!black, fill=otblue!15] (0,0) -- (90:1.2) arc[start angle=90, end angle=-40, radius=1.2] -- cycle;
+  \filldraw[draw=otorange!85!black, fill=otorange!25] (0,0) -- (-40:1.2) arc[start angle=-40, end angle=-150, radius=1.2] -- cycle;
+  \filldraw[draw=otteal!75!black, fill=otteal!15] (0,0) -- (210:1.2) arc[start angle=210, end angle=90, radius=1.2] -- cycle;
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,22 @@
+{
+  "id": "robot",
+  "name": "Robot",
+  "type": "icon",
+  "category": "systems",
+  "domain": [
+    "systems"
+  ],
+  "tags": [
+    "robot",
+    "robotics",
+    "automation",
+    "embodied",
+    "agent"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Robot head."
+}

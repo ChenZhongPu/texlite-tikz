@@ -1,0 +1,22 @@
+{
+  "id": "router",
+  "name": "Router",
+  "type": "icon",
+  "category": "systems",
+  "domain": [
+    "systems"
+  ],
+  "tags": [
+    "router",
+    "network",
+    "gateway",
+    "wifi",
+    "switch"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Network router with antennas."
+}

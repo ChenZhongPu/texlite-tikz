@@ -1,0 +1,24 @@
+{
+  "id": "python",
+  "name": "Python",
+  "type": "icon",
+  "category": "brands",
+  "author": "Daniel Huang",
+  "description": "Python brand mark (two snakes), official brand color.",
+  "domain": [
+    "brands"
+  ],
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz",
+    "svg.path"
+  ],
+  "tags": [
+    "brand",
+    "language",
+    "logo",
+    "programming",
+    "python",
+    "snake"
+  ]
+}

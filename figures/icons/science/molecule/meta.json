@@ -1,0 +1,22 @@
+{
+  "id": "molecule",
+  "name": "Molecule",
+  "type": "icon",
+  "category": "science",
+  "domain": [
+    "science"
+  ],
+  "tags": [
+    "molecule",
+    "chemistry",
+    "compound",
+    "drug",
+    "bond"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Ball-and-stick molecule."
+}

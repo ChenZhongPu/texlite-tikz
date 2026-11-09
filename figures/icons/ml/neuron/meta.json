@@ -1,0 +1,24 @@
+{
+  "id": "neuron",
+  "name": "Neuron",
+  "type": "icon",
+  "category": "ml",
+  "author": "OpenTikZ contributors",
+  "description": "Single artificial neuron / perceptron with weighted inputs and one output.",
+  "domain": [
+    "ml"
+  ],
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz",
+    "arrows.meta"
+  ],
+  "tags": [
+    "neuron",
+    "perceptron",
+    "unit",
+    "node",
+    "neural network",
+    "activation"
+  ]
+}

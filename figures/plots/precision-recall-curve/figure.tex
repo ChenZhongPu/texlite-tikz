@@ -1,0 +1,39 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\pgfplotsset{compat=1.18, width=8.5cm, height=5.6cm, tick label style={font=\small}, label style={font=\small}, legend cell align=left, legend style={font=\small, draw=none, fill=none}}
+
+\definecolor{plnavy}{HTML}{1F4E89}
+\definecolor{plrose}{HTML}{B85A52}
+\definecolor{plsage}{HTML}{93CC9E}
+\definecolor{plsand}{HTML}{E0BE78}
+\definecolor{plplum}{HTML}{8E7BB5}
+\definecolor{plgray}{HTML}{6E6E6E}
+
+% ==== data: replace with your own (shared recall levels) ====
+\pgfplotstableread{
+recall  a     b
+0.05    0.96  0.99
+0.15    0.91  0.98
+0.30    0.83  0.95
+0.45    0.74  0.91
+0.60    0.64  0.85
+0.70    0.56  0.79
+0.80    0.47  0.70
+0.90    0.38  0.57
+1.00    0.27  0.40
+}\datatable
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[width=7.2cm, height=7.2cm, xmin=0, xmax=1, ymin=0, ymax=1.02, xlabel={Recall}, ylabel={Precision}, no markers, legend pos=south west]
+  \pgfplotsinvokeforeach{0.4,0.6,0.8}{
+    \addplot[plgray!40, dashed, domain={#1/(2-#1)+0.005}:1, samples=60, forget plot] {#1*x/(2*x-#1)};
+    \node[font=\tiny, text=plgray, anchor=south east] at (axis cs:1,{#1/(2-#1)}) {$F_1{=}#1$};
+  }
+  \addplot[plgray, line width=1.1pt] table[x=recall, y=a] {\datatable}; \addlegendentry{Baseline}
+  \addplot[plnavy, line width=1.1pt] table[x=recall, y=b] {\datatable}; \addlegendentry{Ours}
+\end{axis}
+\end{tikzpicture}
+\end{document}

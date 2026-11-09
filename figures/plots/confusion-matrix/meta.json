@@ -1,0 +1,21 @@
+{
+  "id": "confusion-matrix",
+  "name": "Confusion matrix",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "confusion matrix",
+    "classification",
+    "evaluation",
+    "matrix"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable"
+  ],
+  "description": "Confusion matrix with the count printed in each cell."
+}

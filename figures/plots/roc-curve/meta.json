@@ -1,0 +1,21 @@
+{
+  "id": "roc-curve",
+  "name": "ROC curve",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "ROC",
+    "AUC",
+    "classification",
+    "evaluation"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable"
+  ],
+  "description": "Receiver operating characteristic curves for several classifiers with the chance diagonal."
+}

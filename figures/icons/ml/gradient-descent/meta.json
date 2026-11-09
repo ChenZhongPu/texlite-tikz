@@ -1,0 +1,22 @@
+{
+  "id": "gradient-descent",
+  "name": "Gradient descent",
+  "type": "icon",
+  "category": "ml",
+  "domain": [
+    "ml"
+  ],
+  "tags": [
+    "gradient descent",
+    "optimization",
+    "optimizer",
+    "loss surface",
+    "training"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Descent path over loss contours."
+}

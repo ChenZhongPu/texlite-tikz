@@ -1,0 +1,16 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{tikz}
+
+\definecolor{otblue}{HTML}{0072B2}
+\definecolor{otorange}{HTML}{E69F00}
+\definecolor{otteal}{HTML}{009E73}
+\definecolor{otpurple}{HTML}{CC79A7}
+\definecolor{otgray}{HTML}{5A5A5A}
+
+\begin{document}
+\begin{tikzpicture}[line width=0.9pt]
+  \filldraw[draw=otpurple!80!black, fill=otpurple!20] (0,0) circle[radius=0.6];
+  \draw[otpurple!80!black, line width=1.8pt, line cap=round] (-0.25,-0.25) -- (0.25,0.25) (-0.25,0.25) -- (0.25,-0.25);
+\end{tikzpicture}
+\end{document}

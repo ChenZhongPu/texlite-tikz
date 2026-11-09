@@ -1,0 +1,32 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\pgfplotsset{compat=1.18, width=8.5cm, height=5.6cm, tick label style={font=\small}, label style={font=\small}, legend cell align=left, legend style={font=\small, draw=none, fill=none}}
+
+\definecolor{plnavy}{HTML}{1F4E89}
+\definecolor{plrose}{HTML}{B85A52}
+\definecolor{plsage}{HTML}{93CC9E}
+\definecolor{plsand}{HTML}{E0BE78}
+\definecolor{plplum}{HTML}{8E7BB5}
+\definecolor{plgray}{HTML}{6E6E6E}
+
+% ==== data: top row first; "after" must be at least "before" ====
+\pgfplotstableread{
+item        before  after
+{Dataset 1}  61.0    74.5
+{Dataset 2}  55.5    71.0
+{Dataset 3}  70.2    78.9
+{Dataset 4}  48.3    69.4
+{Dataset 5}  66.8    72.1
+}\datatable
+
+\begin{document}
+\begin{tikzpicture}
+\begin{axis}[height=5.6cm, y dir=reverse, xmin=40, xmax=85, enlarge y limits=0.15, xlabel={Accuracy (\%)}, ytick=data, yticklabels from table={\datatable}{item}, ytick style={draw=none}, xmajorgrids, grid style={plgray!20}, legend style={at={(0.5,1.03)}, anchor=south, legend columns=2, /tikz/every even column/.append style={column sep=8pt}}]
+  \addplot[draw=none, forget plot, error bars/.cd, x dir=plus, x explicit, error mark=none, error bar style={plgray!60, line width=2pt}] table[x=before, y expr=\coordindex, x error expr=\thisrow{after}-\thisrow{before}] {\datatable};
+  \addplot[only marks, mark=*, mark size=3.2pt, draw=plgray, fill=plgray!45] table[x=before, y expr=\coordindex] {\datatable}; \addlegendentry{Before}
+  \addplot[only marks, mark=*, mark size=3.2pt, draw=plnavy!80!black, fill=plnavy!70] table[x=after, y expr=\coordindex] {\datatable}; \addlegendentry{After}
+\end{axis}
+\end{tikzpicture}
+\end{document}

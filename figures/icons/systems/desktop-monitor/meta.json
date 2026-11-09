@@ -1,0 +1,22 @@
+{
+  "id": "desktop-monitor",
+  "name": "Desktop monitor",
+  "type": "icon",
+  "category": "systems",
+  "domain": [
+    "systems"
+  ],
+  "tags": [
+    "monitor",
+    "display",
+    "desktop",
+    "screen",
+    "workstation"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Desktop monitor on a stand."
+}

@@ -1,0 +1,22 @@
+{
+  "id": "line-chart-multi",
+  "name": "Multi-series line chart",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "line chart",
+    "comparison",
+    "curve",
+    "results",
+    "baseline"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable"
+  ],
+  "description": "Several methods compared across one variable, with markers and a legend."
+}

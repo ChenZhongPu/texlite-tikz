@@ -1,0 +1,22 @@
+{
+  "id": "broken-axis-bars",
+  "name": "Bars with a broken axis",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "bar chart",
+    "broken axis",
+    "outlier",
+    "axis break"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable",
+    "groupplots"
+  ],
+  "description": "Two stacked panels with break marks, so one very tall bar does not flatten the others."
+}

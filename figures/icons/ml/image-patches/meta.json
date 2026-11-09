@@ -1,0 +1,22 @@
+{
+  "id": "image-patches",
+  "name": "Image patches",
+  "type": "icon",
+  "category": "ml",
+  "domain": [
+    "ml"
+  ],
+  "tags": [
+    "image patches",
+    "vision transformer",
+    "vit",
+    "patch embedding",
+    "grid"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Image split into patches."
+}

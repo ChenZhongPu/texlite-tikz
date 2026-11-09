@@ -1,0 +1,22 @@
+{
+  "id": "bar-per-method-colors",
+  "name": "Bars colored by method family",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "bar chart",
+    "error bars",
+    "method comparison",
+    "truncated axis",
+    "AUROC"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable"
+  ],
+  "description": "One bar per method with its own color and error bar, on an open axis that starts above zero."
+}

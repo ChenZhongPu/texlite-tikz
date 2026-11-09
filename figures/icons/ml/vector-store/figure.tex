@@ -1,0 +1,18 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{tikz}
+
+\definecolor{otblue}{HTML}{0072B2}
+\definecolor{otorange}{HTML}{E69F00}
+\definecolor{otteal}{HTML}{009E73}
+\definecolor{otpurple}{HTML}{CC79A7}
+\definecolor{otgray}{HTML}{5A5A5A}
+
+\begin{document}
+\begin{tikzpicture}[line width=0.9pt]
+  \def\rx{1}\def\ry{0.32}\def\bh{1.7}
+  \filldraw[draw=otpurple!80!black, fill=otpurple!20] (-\rx,0) -- (-\rx,-\bh) arc[start angle=180, end angle=360, x radius=\rx, y radius=\ry] -- (\rx,0) arc[start angle=0, end angle=180, x radius=\rx, y radius=\ry] -- cycle;
+  \filldraw[draw=otpurple!80!black, fill=otpurple!40] (0,0) ellipse[x radius=\rx, y radius=\ry];
+  \foreach \y in {-0.65,-1.15,-1.65}{\foreach \x in {-0.55,-0.18,0.18,0.55}{\fill[otpurple!80!black] (\x,\y) circle[radius=0.09];}}
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,23 @@
+{
+  "id": "network",
+  "name": "Network",
+  "type": "icon",
+  "category": "systems",
+  "author": "OpenTikZ contributors",
+  "description": "A small network topology: a central hub linked to four peer nodes.",
+  "domain": [
+    "systems"
+  ],
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "tags": [
+    "network",
+    "topology",
+    "nodes",
+    "hub",
+    "graph",
+    "connectivity"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "grouped-bar-chart",
+  "name": "Grouped bar chart",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "bar chart",
+    "grouped",
+    "comparison",
+    "benchmark",
+    "evaluation"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable"
+  ],
+  "description": "Methods compared side by side across datasets."
+}

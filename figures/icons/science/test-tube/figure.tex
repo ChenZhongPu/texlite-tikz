@@ -1,0 +1,22 @@
+\documentclass[border=4pt]{standalone}
+
+\usepackage{tikz}
+
+\definecolor{otblue}{HTML}{0072B2}
+\definecolor{otorange}{HTML}{E69F00}
+\definecolor{otteal}{HTML}{009E73}
+\definecolor{otpurple}{HTML}{CC79A7}
+\definecolor{otgray}{HTML}{5A5A5A}
+
+\begin{document}
+\begin{tikzpicture}[line width=0.9pt]
+  \begin{scope}[rotate=-25]
+    \begin{scope}
+      \clip (0,2.5) -- (0,0.35) arc[start angle=180, end angle=360, radius=0.35] -- (0.7,2.5) -- cycle;
+      \fill[otpurple!40] (-0.1,0) rectangle (0.8,1.25);
+    \end{scope}
+    \draw[otpurple!80!black] (0,2.5) -- (0,0.35) arc[start angle=180, end angle=360, radius=0.35] -- (0.7,2.5);
+    \draw[otpurple!80!black, line width=1.6pt, line cap=round] (-0.1,2.5) -- (0.8,2.5);
+  \end{scope}
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,21 @@
+{
+  "id": "radar-per-axis-scale",
+  "name": "Radar chart with per-axis scales",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "radar chart",
+    "spider chart",
+    "benchmark",
+    "per-axis scale",
+    "multi-metric"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Polygon radar comparing methods across benchmarks, where every spoke has its own range and printed ticks."
+}

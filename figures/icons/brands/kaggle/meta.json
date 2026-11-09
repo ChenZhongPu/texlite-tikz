@@ -1,0 +1,24 @@
+{
+  "id": "kaggle",
+  "name": "Kaggle",
+  "type": "icon",
+  "category": "brands",
+  "author": "Daniel Huang",
+  "description": "Kaggle brand mark (k), official brand color.",
+  "domain": [
+    "brands"
+  ],
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz",
+    "svg.path"
+  ],
+  "tags": [
+    "brand",
+    "competition",
+    "dataset",
+    "kaggle",
+    "logo",
+    "ml"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": "ridgeline-plot",
+  "name": "Ridgeline plot",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "ridgeline",
+    "joy plot",
+    "distribution",
+    "density",
+    "comparison"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable"
+  ],
+  "description": "Overlapping density curves stacked by group to show how a distribution shifts."
+}

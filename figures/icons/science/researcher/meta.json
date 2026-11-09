@@ -1,0 +1,23 @@
+{
+  "id": "researcher",
+  "name": "Researcher",
+  "type": "icon",
+  "category": "science",
+  "domain": [
+    "science"
+  ],
+  "tags": [
+    "researcher",
+    "scientist",
+    "student",
+    "scholar",
+    "human",
+    "participant"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Person wearing a graduation cap."
+}

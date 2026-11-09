@@ -1,0 +1,22 @@
+{
+  "id": "box-plot-groups",
+  "name": "Box plot",
+  "type": "plot",
+  "domain": [
+    "data"
+  ],
+  "tags": [
+    "box plot",
+    "distribution",
+    "quartiles",
+    "statistics"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "pgfplots",
+    "pgfplotstable",
+    "statistics"
+  ],
+  "description": "Distribution of several groups from their summary statistics."
+}

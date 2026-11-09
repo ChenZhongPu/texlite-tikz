@@ -1,0 +1,21 @@
+{
+  "id": "cell",
+  "name": "Cell",
+  "type": "icon",
+  "category": "science",
+  "domain": [
+    "science"
+  ],
+  "tags": [
+    "cell",
+    "biology",
+    "organism",
+    "microbiology"
+  ],
+  "author": "TexLite contributors",
+  "license": "CC0-1.0",
+  "requires": [
+    "tikz"
+  ],
+  "description": "Biological cell."
+}
