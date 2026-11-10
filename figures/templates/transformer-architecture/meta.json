@@ -1,0 +1,116 @@
+{
+  "author": "TexLite contributors",
+  "description": "Full encoder-decoder Transformer redrawn after Figure 1 of Vaswani et al., NeurIPS 2017: embeddings and positional encodings, the repeated encoder and decoder stacks with residual connections, the encoder memory feeding the decoder's middle attention, and the Linear and Softmax output head.",
+  "domain": [
+    "ml"
+  ],
+  "edit_contract": {
+    "invariants": [
+      "positions are in layout units traced from the original figure; move boxes and wires together so that wires still meet their boxes",
+      "the two arrows from the encoder memory enter the left and middle of the decoder's middle attention; the right arrow comes from the decoder's own previous layer",
+      "preserve the enc-*, dec-*, linear, softmax and probs node names",
+      "keep the source note at the top of the file"
+    ],
+    "node_naming": "encoder (enc-embed) (enc-attn) (enc-norm1) (enc-ff) (enc-norm2) (enc-plus) (enc-wave); decoder (dec-embed) (dec-masked) (dec-norm1) (dec-attn) (dec-norm2) (dec-ff) (dec-norm3) (dec-plus) (dec-wave); head (linear) (softmax) (probs); (inputs) (outputs)",
+    "operations": [
+      {
+        "id": "relabel",
+        "summary": "edit the label macros at the top"
+      },
+      {
+        "id": "recolor",
+        "summary": "change one \\definecolor value; every layer of that kind follows"
+      },
+      {
+        "id": "highlight-layer",
+        "summary": "change the fill of one layer node to mark the part a paper modifies"
+      },
+      {
+        "id": "encoder-only",
+        "summary": "delete the decoder wiring, the decoder layers, the decoder stack and its wave and plus, and end the encoder output at a caption"
+      },
+      {
+        "id": "rescale",
+        "summary": "edit \\gridunit; the type size stays fixed, so reduce the font key if boxes get tight"
+      }
+    ],
+    "parameters": [
+      {
+        "default": "0.014",
+        "meaning": "size of one layout unit; scales the geometry while the type size stays fixed",
+        "name": "\\gridunit",
+        "type": "length-cm"
+      },
+      {
+        "default": "1.35pt",
+        "meaning": "weight of every box and arrow",
+        "name": "\\linew",
+        "type": "length"
+      },
+      {
+        "meaning": "layer labels (use \\\\ for line breaks)",
+        "name": "\\attentionlabel, \\maskedlabel, \\normlabel, \\feedforwardlabel",
+        "type": "text"
+      },
+      {
+        "meaning": "embedding and positional-encoding labels",
+        "name": "\\inputembedlabel, \\outputembedlabel, \\poslabel",
+        "type": "text"
+      },
+      {
+        "meaning": "input, output and head labels",
+        "name": "\\inputslabel, \\outputslabel, \\linearlabel, \\softmaxlabel, \\probslabel",
+        "type": "text"
+      },
+      {
+        "meaning": "repetition mark beside each stack",
+        "name": "\\repeatlabel",
+        "type": "text"
+      }
+    ],
+    "styles": [
+      "wire",
+      "flow",
+      "layer",
+      "stack",
+      "caption",
+      "addop",
+      "wave"
+    ]
+  },
+  "id": "transformer-architecture",
+  "license": "CC0-1.0",
+  "name": "Transformer architecture (Vaswani et al.)",
+  "requires": [
+    "tikz",
+    "arrows.meta",
+    "helvet"
+  ],
+  "source": {
+    "authors": "Vaswani et al.",
+    "figure": "Figure 1",
+    "paper": "Attention Is All You Need",
+    "url": "https://arxiv.org/abs/1706.03762",
+    "venue": "NeurIPS 2017"
+  },
+  "tags": [
+    "transformer",
+    "attention is all you need",
+    "encoder",
+    "decoder",
+    "multi-head attention",
+    "masked attention",
+    "positional encoding",
+    "add & norm",
+    "seq2seq",
+    "architecture",
+    "nlp"
+  ],
+  "type": "template",
+  "venue": [
+    "NeurIPS",
+    "ICML",
+    "ICLR",
+    "ACL"
+  ]
+}

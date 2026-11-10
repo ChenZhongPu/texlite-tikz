@@ -1,0 +1,126 @@
+{
+  "author": "TexLite contributors",
+  "description": "Three-panel overview of CLIP redrawn after Figure 1 of Radford et al., ICML 2021: contrastive pre-training with the N by N similarity matrix, a dataset classifier built from label text, and zero-shot prediction. The original photographs are replaced by neutral placeholders.",
+  "domain": [
+    "ml"
+  ],
+  "edit_contract": {
+    "invariants": [
+      "positions are in layout units traced from the original figure; move boxes and wires together so that wires still meet their boxes",
+      "matched pairs stay on the diagonal of the matrix",
+      "the third score cell stays highlighted and points to the predicted class unless the example changes",
+      "preserve the train-*, m-<i>-<j>, test-*, score-<j>, prompt and answer node names",
+      "keep the source note at the top of the file"
+    ],
+    "node_naming": "panel 1: (train-text) (train-t<j>) (train-i<i>) and matrix cells (m-<i>-<j>) with row 4 and column 4 as the ellipses; panels 2 and 3: (prompt) (test-t<j>) (test-i1) (score-<j>) (answer)",
+    "operations": [
+      {
+        "id": "relabel",
+        "summary": "edit the label macros at the top"
+      },
+      {
+        "id": "use-real-images",
+        "summary": "replace a \\photo call with \\node[inner sep=0pt, anchor=north west] at (x0,y0) {\\includegraphics[width=...]{...}};"
+      },
+      {
+        "id": "change-modalities",
+        "summary": "rename the encoders and symbols, e.g. audio and text"
+      },
+      {
+        "id": "keep-panel-one",
+        "summary": "delete the scope after the first panel to get only the contrastive training figure"
+      },
+      {
+        "id": "recolor",
+        "summary": "change one \\definecolor value"
+      }
+    ],
+    "parameters": [
+      {
+        "default": "0.0134",
+        "meaning": "size of one layout unit; scales the geometry while the type size stays fixed",
+        "name": "\\gridunit",
+        "type": "length-cm"
+      },
+      {
+        "meaning": "panel titles",
+        "name": "\\stageonelabel, \\stagetwolabel, \\stagethreelabel",
+        "type": "text"
+      },
+      {
+        "meaning": "encoder labels",
+        "name": "\\textencoderlabel, \\imageencoderlabel",
+        "type": "text"
+      },
+      {
+        "meaning": "example caption in panel 1",
+        "name": "\\trainingtextlabel",
+        "type": "text"
+      },
+      {
+        "meaning": "embedding symbols and the last index",
+        "name": "\\rowsym, \\colsym, \\lastindex",
+        "type": "text"
+      },
+      {
+        "meaning": "class names in panel 2",
+        "name": "\\classa, \\classb, \\classc, \\classd",
+        "type": "text"
+      },
+      {
+        "meaning": "prompt template and predicted class",
+        "name": "\\classslotlabel, \\promptprefix, \\promptjoin, \\predictedclass",
+        "type": "text"
+      }
+    ],
+    "styles": [
+      "wire",
+      "flow",
+      "stage",
+      "encoder text",
+      "sheet",
+      "tt",
+      "cell",
+      "textcell",
+      "imagecell",
+      "scorecell",
+      "matchcell",
+      "black box"
+    ]
+  },
+  "id": "clip-overview",
+  "license": "CC0-1.0",
+  "name": "CLIP method overview (Radford et al.)",
+  "requires": [
+    "tikz",
+    "arrows.meta",
+    "helvet",
+    "mathptmx",
+    "courier"
+  ],
+  "source": {
+    "authors": "Radford et al.",
+    "figure": "Figure 1",
+    "paper": "Learning Transferable Visual Models From Natural Language Supervision",
+    "url": "https://arxiv.org/abs/2103.00020",
+    "venue": "ICML 2021"
+  },
+  "tags": [
+    "clip",
+    "contrastive learning",
+    "zero-shot",
+    "text encoder",
+    "image encoder",
+    "similarity matrix",
+    "multimodal",
+    "method overview",
+    "three panels"
+  ],
+  "type": "template",
+  "venue": [
+    "ICML",
+    "NeurIPS",
+    "ICLR",
+    "CVPR"
+  ]
+}

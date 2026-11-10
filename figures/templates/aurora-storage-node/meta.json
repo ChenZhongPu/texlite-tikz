@@ -1,0 +1,112 @@
+{
+  "author": "TexLite contributors",
+  "description": "IO traffic inside an Amazon Aurora storage node, redrawn after Figure 4 of Verbitski et al., SIGMOD 2017: eight numbered steps from receiving log records and acknowledging them, through sorting, peer gossip and coalescing into data pages, to S3 backup, garbage collection and scrubbing.",
+  "domain": [
+    "systems",
+    "data"
+  ],
+  "edit_contract": {
+    "invariants": [
+      "positions are in layout units traced from the original figure; move boxes and wires together so that wires still meet their boxes",
+      "only steps 1 and 2 are on the foreground path in the original; keep the numbering if the labels keep their meaning",
+      "preserve the node names (primary) (peer) (backup) (update) (hotlog) (datapages) (step<n>)",
+      "keep the source note at the top of the file"
+    ],
+    "node_naming": "(title) (primary) (peer) (backup); stores (update) (hotlog) (datapages); queue records (in1) (in2) (in3); numbered marks (step1)...(step8)",
+    "operations": [
+      {
+        "id": "relabel",
+        "summary": "edit the label macros at the top"
+      },
+      {
+        "id": "adapt-to-another-system",
+        "summary": "rename the stores and activities and keep the numbered-step layout for a different storage engine"
+      },
+      {
+        "id": "add-step",
+        "summary": "add n/x/y to the \\foreach list of stepmark nodes"
+      },
+      {
+        "id": "add-store",
+        "summary": "call \\store{name}{centre x}{top y}{bottom y} and place its label and record squares on top"
+      },
+      {
+        "id": "recolor",
+        "summary": "change one \\definecolor value"
+      }
+    ],
+    "parameters": [
+      {
+        "default": "0.0155",
+        "meaning": "size of one layout unit; scales the geometry while the type size stays fixed",
+        "name": "\\gridunit",
+        "type": "length-cm"
+      },
+      {
+        "meaning": "title of the node boundary",
+        "name": "\\titlelabel",
+        "type": "text"
+      },
+      {
+        "meaning": "external components",
+        "name": "\\primarylabel, \\peerlabel, \\backuplabel",
+        "type": "text"
+      },
+      {
+        "meaning": "queues and stores",
+        "name": "\\incominglabel, \\updatelabel, \\hotloglabel, \\datapageslabel",
+        "type": "text"
+      },
+      {
+        "meaning": "edge and activity labels",
+        "name": "\\logrecordslabel, \\acklabel, \\sortlabel, \\gossiplabel, \\coalescelabel, \\gclabel, \\scrublabel, \\snapshotlabel",
+        "type": "text"
+      }
+    ],
+    "styles": [
+      "wire",
+      "flow",
+      "twoway",
+      "thin flow",
+      "edge text",
+      "instance",
+      "cyl text",
+      "record",
+      "stepmark"
+    ]
+  },
+  "id": "aurora-storage-node",
+  "license": "CC0-1.0",
+  "name": "Aurora storage node IO (Verbitski et al.)",
+  "requires": [
+    "tikz",
+    "arrows.meta",
+    "helvet"
+  ],
+  "source": {
+    "authors": "Verbitski et al.",
+    "figure": "Figure 4",
+    "paper": "Amazon Aurora: Design Considerations for High Throughput Cloud-Native Relational Databases",
+    "url": "https://doi.org/10.1145/3035918.3056101",
+    "venue": "SIGMOD 2017"
+  },
+  "tags": [
+    "aurora",
+    "cloud database",
+    "storage node",
+    "log is the database",
+    "redo log",
+    "gossip",
+    "coalesce",
+    "hot log",
+    "update queue",
+    "s3 backup",
+    "numbered steps"
+  ],
+  "type": "template",
+  "venue": [
+    "SIGMOD",
+    "VLDB",
+    "ICDE"
+  ]
+}

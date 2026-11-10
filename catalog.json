@@ -140,6 +140,67 @@
    "preview": "figures/templates/agent-mcp-stack/preview.svg"
   },
   {
+   "id": "aurora-storage-node",
+   "name": "Aurora storage node IO (Verbitski et al.)",
+   "type": "template",
+   "domain": [
+    "systems",
+    "data"
+   ],
+   "tags": [
+    "aurora",
+    "cloud database",
+    "storage node",
+    "log is the database",
+    "redo log",
+    "gossip",
+    "coalesce",
+    "hot log",
+    "update queue",
+    "s3 backup",
+    "numbered steps"
+   ],
+   "description": "IO traffic inside an Amazon Aurora storage node, redrawn after Figure 4 of Verbitski et al., SIGMOD 2017: eight numbered steps from receiving log records and acknowledging them, through sorting, peer gossip and coalescing into data pages, to S3 backup, garbage collection and scrubbing.",
+   "requires": [
+    "tikz",
+    "arrows.meta",
+    "helvet"
+   ],
+   "featured": false,
+   "tex": "figures/templates/aurora-storage-node/figure.tex",
+   "preview": "figures/templates/aurora-storage-node/preview.svg"
+  },
+  {
+   "id": "clip-overview",
+   "name": "CLIP method overview (Radford et al.)",
+   "type": "template",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "clip",
+    "contrastive learning",
+    "zero-shot",
+    "text encoder",
+    "image encoder",
+    "similarity matrix",
+    "multimodal",
+    "method overview",
+    "three panels"
+   ],
+   "description": "Three-panel overview of CLIP redrawn after Figure 1 of Radford et al., ICML 2021: contrastive pre-training with the N by N similarity matrix, a dataset classifier built from label text, and zero-shot prediction. The original photographs are replaced by neutral placeholders.",
+   "requires": [
+    "tikz",
+    "arrows.meta",
+    "helvet",
+    "mathptmx",
+    "courier"
+   ],
+   "featured": false,
+   "tex": "figures/templates/clip-overview/figure.tex",
+   "preview": "figures/templates/clip-overview/preview.svg"
+  },
+  {
    "id": "encoder-decoder",
    "name": "Encoder-decoder (bottleneck)",
    "type": "template",
@@ -304,6 +365,36 @@
    "featured": false,
    "tex": "figures/templates/system-block-diagram/figure.tex",
    "preview": "figures/templates/system-block-diagram/preview.svg"
+  },
+  {
+   "id": "transformer-architecture",
+   "name": "Transformer architecture (Vaswani et al.)",
+   "type": "template",
+   "domain": [
+    "ml"
+   ],
+   "tags": [
+    "transformer",
+    "attention is all you need",
+    "encoder",
+    "decoder",
+    "multi-head attention",
+    "masked attention",
+    "positional encoding",
+    "add & norm",
+    "seq2seq",
+    "architecture",
+    "nlp"
+   ],
+   "description": "Full encoder-decoder Transformer redrawn after Figure 1 of Vaswani et al., NeurIPS 2017: embeddings and positional encodings, the repeated encoder and decoder stacks with residual connections, the encoder memory feeding the decoder's middle attention, and the Linear and Softmax output head.",
+   "requires": [
+    "tikz",
+    "arrows.meta",
+    "helvet"
+   ],
+   "featured": false,
+   "tex": "figures/templates/transformer-architecture/figure.tex",
+   "preview": "figures/templates/transformer-architecture/preview.svg"
   },
   {
    "id": "flash-attention",

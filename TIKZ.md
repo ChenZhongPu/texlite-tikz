@@ -80,10 +80,21 @@ spacing first.
 
 ## Colors
 
-In diagrams and icons, use only the five palette names, defined at the top of the figures that use them. Tints and
-shades such as `otblue!15` and `otblue!75!black` are fine. Do not write hex values
-inline or use stock names such as `blue`. Brand icons are the one exception and keep
-their official `brand*` colors. Use tints for fills and the stronger color for strokes.
+The fixed palettes are for data plots and for the figures that declare them. A
+general TikZ diagram is not limited to a fixed palette.
+
+- **General diagrams:** choose colors that suit the figure. Define each one by name
+  with `\definecolor` at the top of the file so that a recolor is one edit, and do not
+  write hex values inline. Use a few colors, with light fills and stronger strokes.
+- **Figures redrawn from a paper:** keep the colors of the original.
+- **Data plots:** use the palette under "Data plots" below.
+- **Brand icons:** keep their official `brand*` colors.
+- **Existing figures:** follow the `edit_contract` of the figure you copied. If it
+  requires the palette below, keep that palette in the copy.
+
+The icons and many templates use this palette, which is also a reasonable default
+when a new diagram has no colors of its own. Tints and shades such as `otblue!15` and
+`otblue!75!black` are fine.
 
 | Name       | Light     | Dark      | Typical role                    |
 |------------|-----------|-----------|---------------------------------|
@@ -93,8 +104,8 @@ their official `brand*` colors. Use tints for fills and the stronger color for s
 | `otpurple` | `CC79A7`  | `E08FBE`  | tertiary blocks, auxiliary paths|
 | `otgray`   | `5A5A5A`  | `B3B3B3`  | outlines, text, arrows          |
 
-Recolor by changing the palette name in the relevant style. For a dark figure, change
-the `\definecolor` values to the dark column, and add
+To recolor a figure that uses this palette, change the palette name in the relevant
+style. For a dark figure, change the `\definecolor` values to the dark column, and add
 `\definecolor{otpaper}{HTML}{1E1E1E}` and `\pagecolor{otpaper}`. Without the dark page,
 the tints look washed out.
 
